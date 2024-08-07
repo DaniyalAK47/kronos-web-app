@@ -11,15 +11,6 @@ import LandingPage from "./pages/Landing";
 import AboutPage from "./pages/About";
 
 function App() {
-  // const defaultOptions = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: animationData,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // };
-
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
