@@ -16,12 +16,12 @@ import { useState } from "react";
 import { ethers } from "ethers";
 
 const LandingPage = () => {
-  const [errorMessage, setErrorMessage] = useState("");
+//   const [errorMessage, setErrorMessage] = useState("");
   const [userAddress, setUserAddress] = useState(
     localStorage.getItem("userAddress") || ""
   );
 
-  console.log(errorMessage);
+//   console.log(errorMessage);
 
   const navigate = useNavigate();
 //   const { ethereum } = window;
@@ -49,9 +49,10 @@ const LandingPage = () => {
           localStorage.setItem("userAddress", res);
         });
       });
-    } else {
-      setErrorMessage("Please Install MetaMask!!!");
-    }
+    } 
+    // else {
+    //   setErrorMessage("Please Install MetaMask!!!");
+    // }
   };
 
   return (
