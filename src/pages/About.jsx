@@ -20,9 +20,10 @@ const AboutPage = () => {
   const [userAddress, setUserAddress] = useState(
     localStorage.getItem("userAddress") || ""
   );
+  console.log(errorMessage);
 
   const navigate = useNavigate();
-  const { ethereum } = window;
+//   const { ethereum } = window;
   const provider = new ethers.providers.Web3Provider(window?.ethereum);
 
   const defaultOptions = {

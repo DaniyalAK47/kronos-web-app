@@ -21,8 +21,10 @@ const LandingPage = () => {
     localStorage.getItem("userAddress") || ""
   );
 
+  console.log(errorMessage);
+
   const navigate = useNavigate();
-  const { ethereum } = window;
+//   const { ethereum } = window;
   const provider = new ethers.providers.Web3Provider(window?.ethereum);
   //   const provider = new ethers.BrowserProvider(ethereum);
 
