@@ -11,6 +11,8 @@ import {
 import nameLogo from "../assets/Kaijunka.png";
 import { useNavigate } from "react-router-dom";
 
+import MenuIcon from '@mui/icons-material/Menu';
+
 const NavBar = () => {
   const navigate = useNavigate();
   return (
