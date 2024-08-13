@@ -20,6 +20,10 @@ import { ethers } from "ethers";
 import { useSDK } from "@metamask/sdk-react";
 
 import MenuIcon from "@mui/icons-material/Menu";
+import Char1 from "../assets/character1.png";
+import Char2 from "../assets/character2.png";
+import Char3 from "../assets/character3.png";
+import Char4 from "../assets/character4.png";
 
 const AboutPage = () => {
   const { sdk, connected, connecting, provider, chainId } = useSDK();
@@ -91,8 +95,8 @@ const AboutPage = () => {
   };
 
   return (
-    <Box>
-      <Box sx={{ flexGrow: 1 }}>
+    <Box height={"100vh"}>
+      <Box marginBottom={"10px"}>
         <AppBar
           position="static"
           sx={{ background: "#ff9935", paddingTop: "25px", paddingX: "15px" }}
@@ -241,15 +245,132 @@ const AboutPage = () => {
       <Box
         display={"flex"}
         flexDirection={"column"}
-        width={"99.2vw"}
-        height={"90.6vh"}
+        width={"100%"}
+        height={size[0] < 800 ?"85%":"100%"}
         //   alignItems={"center"}
         justifyContent={"center"}
         // alignItems={"center"}
         // sx={{ background: "#ff9935" }}
+        // marginTop={"50px"}
       >
         <Box>
           <Lottie options={defaultOptions} />
+        </Box>
+
+        <Box
+          display={"flex"}
+          width={"98.5%"}
+          justifyContent={"space-between"}
+          columnGap={2}
+          rowGap={2}
+          marginLeft={"5px"}
+          marginTop={"30px"}
+          flexWrap={"wrap"}
+          alignItems={"center"}
+        >
+          <Box>
+            <Box
+              sx={{
+                background: "lightblue",
+                paddingTop: size[0] < 800 ? "20px" : "40px",
+                paddingLeft: size[0] < 800 ? "14px" : "20px",
+                paddingRight: size[0] < 800 ? "10px" : "20px",
+                borderRadius: "15px",
+              }}
+            >
+              <img
+                src={Char4}
+                width={size[0] < 800 ? "50px" : "220px"}
+                height={size[0] < 800 ? "50px" : "220px"}
+                style={{ position: "relative", bottom: "-3px" }}
+              />
+            </Box>
+            <Typography
+              fontSize={size[0] < 800 ? "15px" : "38px"}
+              fontWeight={800}
+              marginTop={"10px"}
+            >
+              Kiki
+            </Typography>
+          </Box>
+
+          <Box>
+            <Box
+              sx={{
+                background: "#d1ffbd",
+                paddingTop: size[0] < 800 ? "20px" : "40px",
+                paddingLeft: size[0] < 800 ? "14px" : "20px",
+                paddingRight: size[0] < 800 ? "10px" : "20px",
+                borderRadius: "15px",
+              }}
+            >
+              <img
+                src={Char2}
+                width={size[0] < 800 ? "50px" : "220px"}
+                height={size[0] < 800 ? "50px" : "220px"}
+                style={{ position: "relative", bottom: "-3px" }}
+              />
+            </Box>
+            <Typography
+              fontSize={size[0] < 800 ? "15px" : "38px"}
+              fontWeight={800}
+              marginTop={"10px"}
+            >
+              Koko
+            </Typography>
+          </Box>
+
+          <Box>
+            <Box
+              sx={{
+                background: "#ffcccb",
+                paddingTop: size[0] < 800 ? "20px" : "40px",
+                paddingLeft: size[0] < 800 ? "14px" : "20px",
+                paddingRight: size[0] < 800 ? "10px" : "20px",
+                borderRadius: "15px",
+              }}
+            >
+              <img
+                src={Char3}
+                width={size[0] < 800 ? "50px" : "220px"}
+                height={size[0] < 800 ? "50px" : "220px"}
+                style={{ position: "relative", bottom: "-3px" }}
+              />
+            </Box>
+            <Typography
+              fontSize={size[0] < 800 ? "15px" : "38px"}
+              fontWeight={800}
+              marginTop={"10px"}
+            >
+              Kiku
+            </Typography>
+          </Box>
+
+          <Box>
+            <Box
+              sx={{
+                background: "#dfc5fe",
+                paddingTop: size[0] < 800 ? "20px" : "40px",
+                paddingLeft: size[0] < 800 ? "14px" : "20px",
+                paddingRight: size[0] < 800 ? "10px" : "20px",
+                borderRadius: "15px",
+              }}
+            >
+              <img
+                src={Char1}
+                width={size[0] < 800 ? "50px" : "220px"}
+                height={size[0] < 800 ? "50px" : "220px"}
+                style={{ position: "relative", bottom: "-3px" }}
+              />
+            </Box>
+            <Typography
+              fontSize={size[0] < 800 ? "15px" : "38px"}
+              fontWeight={800}
+              marginTop={"10px"}
+            >
+              Cheeru
+            </Typography>
+          </Box>
         </Box>
       </Box>
     </Box>

@@ -237,8 +237,10 @@ const LandingPage = () => {
       <Box
         display={"flex"}
         flexDirection={"column"}
-        width={"99vw"}
+        // width={"99vw"}
         height={"90.6vh"}
+        width={"99.8%"}
+        // height={"90%"}
         //   alignItems={"center"}
         justifyContent={"center"}
         // sx={{ background: "#ff9935" }}
