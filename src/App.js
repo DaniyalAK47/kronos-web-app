@@ -9,8 +9,6 @@ import {
 } from "react-router-dom";
 import LandingPage from "./pages/Landing";
 import AboutPage from "./pages/About";
-import MetaMaskSDK from "@metamask/sdk";
-import { useEffect, useState } from "react";
 
 function App() {
   // new MetaMaskSDK({

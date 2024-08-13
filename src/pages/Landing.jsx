@@ -23,7 +23,7 @@ import { useSDK } from "@metamask/sdk-react";
 import MenuIcon from "@mui/icons-material/Menu";
 
 const LandingPage = () => {
-  const { sdk, connected, connecting, provider, chainId } = useSDK();
+  const { sdk } = useSDK();
   const [size, setSize] = useState([0, 0]);
   const [userAddress, setUserAddress] = useState(
     localStorage.getItem("userAddress") || ""

@@ -26,7 +26,7 @@ import Char3 from "../assets/character3.png";
 import Char4 from "../assets/character4.png";
 
 const AboutPage = () => {
-  const { sdk, connected, connecting, provider, chainId } = useSDK();
+  const { sdk } = useSDK();
   const [size, setSize] = useState([0, 0]);
   //   const [errorMessage, setErrorMessage] = useState("");
   const [userAddress, setUserAddress] = useState(
@@ -246,7 +246,7 @@ const AboutPage = () => {
         display={"flex"}
         flexDirection={"column"}
         width={"100%"}
-        height={size[0] < 800 ?"85%":"100%"}
+        height={size[0] < 800 ? "85%" : "100%"}
         //   alignItems={"center"}
         justifyContent={"center"}
         // alignItems={"center"}
