@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "Light" !important;
 }
 
 .App-logo {
@@ -35,4 +36,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: "Light";   /*Can be any text*/
+  src: local("Herecomesthecloud_1"),
+    url("./font/Herecomesthecloud_1.otf.ttf") format("truetype");
 }
