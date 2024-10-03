@@ -9,7 +9,7 @@ import {
   Tooltip,
   Typography,
 } from "@mui/material";
-import Lottie from "react-lottie";
+import HomeImg from "../assets/home.png";
 
 import animationData from "../lotties/godzillaLatestJsonLottie .json";
 import nameLogo from "../assets/Kaijunka.png";
@@ -27,8 +27,11 @@ import InstagramIcon from "../assets/Instagram_icon.png.webp";
 import RedditIcon from "../assets/reddit.png";
 
 import TiktokLogo from "../assets/tiktok.png";
+import ceoImage from "../assets/ceoimg.jpg";
 
-const LandingPage = () => {
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+
+const OurMission = () => {
   const { sdk } = useSDK();
   const [size, setSize] = useState([0, 0]);
   const [userAddress, setUserAddress] = useState(
@@ -176,7 +179,7 @@ const LandingPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"}>
+                          <Typography fontFamily={"Light"} fontFamily={"Light"}>
                             Our Mission
                           </Typography>
                         </Box>
@@ -187,7 +190,9 @@ const LandingPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"}>Team</Typography>
+                          <Typography fontFamily={"Light"} fontFamily={"Light"}>
+                            Team
+                          </Typography>
                         </Box>
                       </MenuItem>
                       <MenuItem>
@@ -196,7 +201,9 @@ const LandingPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"}>Episodes</Typography>
+                          <Typography fontFamily={"Light"} fontFamily={"Light"}>
+                            Episodes
+                          </Typography>
                         </Box>
                       </MenuItem>
                       <MenuItem>
@@ -205,7 +212,7 @@ const LandingPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"}>
+                          <Typography fontFamily={"Light"} fontFamily={"Light"}>
                             <Tooltip title="Coming Soon">News</Tooltip>
                           </Typography>
                         </Box>
@@ -242,7 +249,10 @@ const LandingPage = () => {
                                 marginRight: "10px",
                               }}
                             />
-                            <Typography fontFamily={"Light"}>
+                            <Typography
+                              fontFamily={"Light"}
+                              fontFamily={"Light"}
+                            >
                               Twitter
                             </Typography>
                           </Box>
@@ -267,7 +277,10 @@ const LandingPage = () => {
                                 marginRight: "10px",
                               }}
                             />
-                            <Typography fontFamily={"Light"}>
+                            <Typography
+                              fontFamily={"Light"}
+                              fontFamily={"Light"}
+                            >
                               Instagram
                             </Typography>
                           </Box>
@@ -290,7 +303,12 @@ const LandingPage = () => {
                                 marginRight: "10px",
                               }}
                             />
-                            <Typography fontFamily={"Light"}>Reddit</Typography>
+                            <Typography
+                              fontFamily={"Light"}
+                              fontFamily={"Light"}
+                            >
+                              Reddit
+                            </Typography>
                           </Box>
                         </Link>
                       </MenuItem>
@@ -316,7 +334,12 @@ const LandingPage = () => {
                                 marginRight: "10px",
                               }}
                             />
-                            <Typography fontFamily={"Light"}>Tiktok</Typography>
+                            <Typography
+                              fontFamily={"Light"}
+                              fontFamily={"Light"}
+                            >
+                              Tiktok
+                            </Typography>
                           </Box>
                         </Link>
                       </MenuItem>
@@ -335,6 +358,7 @@ const LandingPage = () => {
               <Box display={"flex"} columnGap={10}>
                 <Typography
                   fontFamily={"Light"}
+                  fontFamily={"Light"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -347,6 +371,7 @@ const LandingPage = () => {
 
                 <Typography
                   fontFamily={"Light"}
+                  fontFamily={"Light"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -358,6 +383,7 @@ const LandingPage = () => {
                 </Typography>
 
                 <Typography
+                  fontFamily={"Light"}
                   fontFamily={"Light"}
                   variant="h6"
                   fontWeight={800}
@@ -379,55 +405,73 @@ const LandingPage = () => {
                   sx={{ borderRadius: "5px" }}
                 >
                   <MenuItem>
-                    <Box
-                      display={"flex"}
-                      alignItems={"center"}
-                      onClick={() => navigate("/more")}
-                    >
-                      <Typography fontFamily={"Light"}>Our Mission</Typography>
+                    {/* <Link
+                        to={"https://x.com/kaijunka"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "black" }}
+                      > */}
+                    <Box display={"flex"} alignItems={"center"}>
+                      <Typography fontFamily={"Light"} fontFamily={"Light"}>
+                        Our Mission
+                      </Typography>
                     </Box>
+                    {/* </Link> */}
                   </MenuItem>
                   <MenuItem>
-                    <Box
-                      display={"flex"}
-                      alignItems={"center"}
-                      onClick={() => navigate("/more")}
-                    >
-                      <Typography fontFamily={"Light"}>Team</Typography>
+                    {/* <Link
+                        to={
+                          "https://www.instagram.com/kaijunka_hq?igsh=YWNwM2huYnhzZnQ3&utm_source=qr"
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "black" }}
+                      > */}
+                    <Box display={"flex"} alignItems={"center"}>
+                      <Typography fontFamily={"Light"} fontFamily={"Light"}>
+                        Team
+                      </Typography>
                     </Box>
+                    {/* </Link> */}
                   </MenuItem>
                   <MenuItem>
-                    <Box
-                      display={"flex"}
-                      alignItems={"center"}
-                      onClick={() => navigate("/more")}
-                    >
+                    {/* <Link
+                        to={"https://www.reddit.com/r/Kaijunka/s/uHOsiD8GmK"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "black" }}
+                      > */}
+                    <Box display={"flex"} alignItems={"center"}>
                       <Typography fontFamily={"Light"}>Episodes</Typography>
                     </Box>
+                    {/* </Link> */}
                   </MenuItem>
                   <MenuItem>
-                    <Box
-                      display={"flex"}
-                      alignItems={"center"}
-                      onClick={() => navigate("/more")}
-                    >
-                      <Typography fontFamily={"Light"}>
+                    {/* <Link
+                        to={"http://www.tiktok.com/@kaijunka_hq"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "black" }}
+                      > */}
+                    <Box display={"flex"} alignItems={"center"}>
+                      <Typography fontFamily={"Light"} fontFamily={"Light"}>
                         <Tooltip title="Coming Soon">News</Tooltip>
                       </Typography>
                     </Box>
+                    {/* </Link> */}
                   </MenuItem>
                 </Menu>
 
-                {/* <Typography
-                  fontFamily={"Light"}
-                  variant="h6"
-                  fontWeight={800}
-                  component="div"
-                  sx={{ flexGrow: 1, cursor: "pointer" }}
-                  textTransform={"uppercase"}
-                >
-                  <Tooltip title="Coming Soon">More</Tooltip>
-                </Typography> */}
+                {/* <Typography fontFamily={"Light"}
+                    fontFamily={"Light"}
+                    variant="h6"
+                    fontWeight={800}
+                    component="div"
+                    sx={{ flexGrow: 1, cursor: "pointer" }}
+                    textTransform={"uppercase"}
+                  >
+                    <Tooltip title="Coming Soon">More</Tooltip>
+                  </Typography> */}
 
                 <Typography
                   fontFamily={"Light"}
@@ -563,6 +607,7 @@ const LandingPage = () => {
             >
               <Typography
                 fontFamily={"Light"}
+                fontFamily={"Light"}
                 color={"black"}
                 fontWeight={700}
                 maxWidth={userAddress ? "200px" : "120px"}
@@ -582,17 +627,393 @@ const LandingPage = () => {
 
       <Box
         display={"flex"}
-        flexDirection={"column"}
-        // width={"99vw"}
-        height={"87vh"}
-        width={"99.8%"}
-        // height={"90%"}
-        //   alignItems={"center"}
+        flexDirection={{ xs: "column", md: "row" }}
+        width={"100%"}
         justifyContent={"center"}
-        // sx={{ background: "#ff9935" }}
+        sx={{ background: "#fef6db" }}
       >
+        <Box
+          width={{ xs: "100%", xl: "60%" }}
+          display={"flex"}
+          flexDirection={{ xs: "column", md: "row" }}
+          justifyContent={{ lg: "center" }}
+          alignItems={{ lg: "center" }}
+          p={{ xs: 0, lg: 5 }}
+        >
+          <Box>
+            <img
+              src={HomeImg}
+              height={"400px"}
+              width={size[0] < 500 ? "100%" : "500px"}
+            />
+          </Box>
+
+          <Box>
+            <Box p={1}>
+              <Typography
+                fontFamily={"Light"}
+                variant="caption"
+                fontWeight={800}
+                fontSize={"20px"}
+              >
+                OUR MISSION
+              </Typography>
+              <Typography
+                fontFamily={"Light"}
+                textAlign={"left"}
+                fontSize={"15px"}
+                mb={2}
+              >
+                At Kaijunka, our mission is to empower and unite a global
+                community through dynamic storytelling, immersive adventures,
+                and the bond between humans and mystical creatures. We aim to
+                inspire action and positive change in the world by confronting
+                modern-day challenges with the strength of friendship, unity,
+                and the spirit of the samurai.
+              </Typography>
+
+              <Typography
+                fontFamily={"Light"}
+                variant="caption"
+                fontWeight={800}
+                fontSize={"20px"}
+              >
+                OUR VISION
+              </Typography>
+              <Typography
+                fontFamily={"Light"}
+                textAlign={"left"}
+                fontSize={"15px"}
+              >
+                To create a world where ancient wisdom and modern innovation
+                coexist harmoniously, inspiring a global community to embrace
+                the values of courage, unity, and moral integrity in the face of
+                societal challenges. Through storytelling, art, and technology,
+                Kaijunka envisions a future where every individual is empowered
+                to challenge the status quo, cultivate meaningful connections,
+                and contribute to a more just and enlightened society." This
+                vision statement reflects the balance between Kaijunka's ancient
+                roots and its modern-day relevance, emphasizing the
+                community-driven aspect of the project while inspiring
+                participants to engage with deeper moral and societal themes.
+              </Typography>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+
+      <Box
+        display={"flex"}
+        justifyContent={"center"}
+        flexDirection={{ xs: "column-reverse", lg: "row" }}
+        mt={5}
+      >
+        <Box
+          width={{ xs: "100%", lg: "40%" }}
+          display={"flex"}
+          justifyContent={{ xs: "center", lg: "start" }}
+          flexDirection={"column"}
+          alignItems={{ xs: "center", lg: "start" }}
+        >
+          <Typography
+            fontFamily={"Light"}
+            fontWeight={700}
+            fontSize={"28px"}
+            mb={{ xs: 2, lg: 15 }}
+          >
+            Team
+          </Typography>
+          <Typography fontFamily={"Light"} fontWeight={700} fontSize={"18px"}>
+            Vinod Vijay
+          </Typography>
+          <Typography fontFamily={"Light"} mb={{ xs: 2, lg: 18 }}>
+            (CEO - Nyew Research)
+          </Typography>
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            justifyContent={{ xs: "center", lg: "start" }}
+            width={"100%"}
+            mb={3}
+          >
+            <Box
+              display={"flex"}
+              flexDirection={"column"}
+              alignItems={{ xs: "center", lg: "start" }}
+              mr={{ lg: 10 }}
+            >
+              <Typography
+                fontFamily={"Light"}
+                fontWeight={700}
+                fontSize={"18px"}
+                mb={2}
+              >
+                Core Team
+              </Typography>
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                    fontSize: "150px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Light"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  Sahana
+                </Typography>
+                <Typography fontFamily={"Light"} mb={1} width={"200px"}>
+                  Creative director
+                </Typography>
+              </Box>
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                    fontSize: "150px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Light"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  BrenFi
+                </Typography>
+                <Typography fontFamily={"Light"} mb={1} width={"200px"}>
+                  Art director
+                </Typography>
+              </Box>
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                    fontSize: "150px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Light"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  LondRain
+                </Typography>
+                <Typography fontFamily={"Light"} mb={1} width={"200px"}>
+                  Illustrator
+                </Typography>
+              </Box>
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                    fontSize: "150px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Light"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  Mueed
+                </Typography>
+                <Typography fontFamily={"Light"} mb={1} width={"200px"}>
+                  Blockchain Engineering Lead
+                </Typography>
+              </Box>
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                    fontSize: "150px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Light"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  Anupa
+                </Typography>
+                <Typography fontFamily={"Light"} mb={9} width={"200px"}>
+                  Dev Ops Engineer
+                </Typography>
+              </Box>
+            </Box>
+            <Box
+              display={"flex"}
+              flexDirection={"column"}
+              alignItems={{ xs: "center", lg: "start" }}
+            >
+              <Typography
+                fontFamily={"Light"}
+                fontWeight={700}
+                fontSize={"18px"}
+                mb={2}
+              >
+                Advisors
+              </Typography>
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    fontSize: "150px",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Light"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  Savitha
+                </Typography>
+                <Typography fontFamily={"Light"} mb={1} width={"200px"}>
+                  ex-Meta
+                </Typography>
+              </Box>
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                    fontSize: "150px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Light"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  Shivani
+                </Typography>
+                <Typography fontFamily={"Light"} mb={1} width={"200px"}>
+                  ex-Dell
+                </Typography>
+              </Box>
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                    fontSize: "150px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Light"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  Niranjan
+                </Typography>
+                <Typography fontFamily={"Light"} mb={1} width={"200px"}>
+                  Schneider
+                </Typography>
+              </Box>
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                    fontSize: "150px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Light"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  Pooventhan
+                </Typography>
+                <Typography fontFamily={"Light"} mb={1} width={"200px"}>
+                  Witron
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+
         <Box>
-          <Lottie options={defaultOptions} />
+          <img src={ceoImage} height={"330px"} />
+          <Typography
+            fontFamily={"Light"}
+            // fontSize={"30px"}
+            fontWeight={600}
+            textTransform={"uppercase"}
+            sx={{ cursor: "pointer" }}
+            onClick={() => navigate("/story")}
+          >
+            Click to know the story behind Kaijunka
+          </Typography>
         </Box>
       </Box>
 
@@ -603,4 +1024,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default OurMission;

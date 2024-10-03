@@ -9,38 +9,42 @@ import {
   Tooltip,
   Typography,
 } from "@mui/material";
-import Lottie from "react-lottie";
+import HomeImg from "../assets/home.png";
 
-import animationData from "../lotties/godzillaBlue";
+import animationData from "../lotties/godzillaLatestJsonLottie .json";
 import nameLogo from "../assets/Kaijunka.png";
 
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+
 import { ethers } from "ethers";
 import { useSDK } from "@metamask/sdk-react";
 
 import MenuIcon from "@mui/icons-material/Menu";
-import Char1 from "../assets/character1.png";
-
-import Char2 from "../assets/character2.png";
-import Char3 from "../assets/character3.png";
-import Char4 from "../assets/character4.png";
-
 import TwitterIcon from "../assets/twitter.png";
 
 import InstagramIcon from "../assets/Instagram_icon.png.webp";
 import RedditIcon from "../assets/reddit.png";
 
 import TiktokLogo from "../assets/tiktok.png";
+import ceoImage from "../assets/ceoimg.jpg";
 
-const AboutPage = () => {
+import evolutionImg from "../assets/evolution.png";
+import design from "../assets/design1.jpg";
+import animation from "../assets/animation.gif";
+import work1 from "../assets/work1.jpg";
+import work2 from "../assets/work2.png";
+import work3 from "../assets/work3.png";
+import beg1 from "../assets/beg1.jpg";
+import beg2 from "../assets/beg2.png";
+import beg3 from "../assets/beg3.png";
+
+const Story = () => {
   const { sdk } = useSDK();
   const [size, setSize] = useState([0, 0]);
-  //   const [errorMessage, setErrorMessage] = useState("");
   const [userAddress, setUserAddress] = useState(
     localStorage.getItem("userAddress") || ""
   );
-  //   console.log(errorMessage);
 
   const [anchorEl, setAnchorEl] = useState();
   const [anchorElSocial, setAnchorElSocial] = useState();
@@ -79,14 +83,11 @@ const AboutPage = () => {
 
   const navigate = useNavigate();
   let providerWeb;
-
+  //   const { ethereum } = window;
   try {
     providerWeb = new ethers.providers.Web3Provider(window?.ethereum);
     //   const provider = new ethers.BrowserProvider(ethereum);
   } catch (err) {}
-
-  //   const { ethereum } = window;
-  // const provider = new ethers.providers.Web3Provider(window?.ethereum);
 
   const defaultOptions = {
     loop: true,
@@ -95,6 +96,10 @@ const AboutPage = () => {
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
+  };
+
+  const handlePreview = (url) => {
+    window.open(url, "_blank");
   };
 
   const connectwalletHandler = async () => {
@@ -117,10 +122,9 @@ const AboutPage = () => {
       }
     }
   };
-
   return (
-    <Box height={"100vh"}>
-      <Box marginBottom={"10px"}>
+    <Box maxWidth={"100vw"}>
+      <Box sx={{ flexGrow: 1 }} maxWidth={"100vw"}>
         <AppBar
           position="static"
           sx={{ background: "#fad121", paddingY: "15px", paddingX: "15px" }}
@@ -147,6 +151,7 @@ const AboutPage = () => {
                     MenuListProps={{
                       "aria-labelledby": "basic-button",
                     }}
+                    sx={{ borderRadius: "5px" }}
                   >
                     <MenuItem
                       onClick={() => {
@@ -163,14 +168,6 @@ const AboutPage = () => {
                       }}
                     >
                       About
-                    </MenuItem>
-                    <MenuItem
-                      onClick={() => {
-                        setAnchorEl(null);
-                        // navigate("/about");
-                      }}
-                    >
-                      Characters
                     </MenuItem>
                     <MenuItem onClick={handleClickChar}>More</MenuItem>
                     <Menu
@@ -189,7 +186,7 @@ const AboutPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"}>
+                          <Typography fontFamily={"Light"} fontFamily={"Light"}>
                             Our Mission
                           </Typography>
                         </Box>
@@ -200,7 +197,9 @@ const AboutPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"}>Team</Typography>
+                          <Typography fontFamily={"Light"} fontFamily={"Light"}>
+                            Team
+                          </Typography>
                         </Box>
                       </MenuItem>
                       <MenuItem>
@@ -209,7 +208,9 @@ const AboutPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"}>Episodes</Typography>
+                          <Typography fontFamily={"Light"} fontFamily={"Light"}>
+                            Episodes
+                          </Typography>
                         </Box>
                       </MenuItem>
                       <MenuItem>
@@ -218,7 +219,7 @@ const AboutPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"}>
+                          <Typography fontFamily={"Light"} fontFamily={"Light"}>
                             <Tooltip title="Coming Soon">News</Tooltip>
                           </Typography>
                         </Box>
@@ -238,24 +239,85 @@ const AboutPage = () => {
                       }}
                       sx={{ borderRadius: "5px" }}
                     >
-                      <MenuItem
-                        onClick={() => {
-                          setAnchorEl(null);
-                          navigate("/");
-                        }}
-                      >
-                        <Box display={"flex"} alignItems={"center"}>
-                          <img
-                            src={TwitterIcon}
-                            height={"20px"}
-                            width={"20px"}
-                            style={{
-                              borderRadius: "50px",
-                              marginRight: "10px",
-                            }}
-                          />
-                          Twitter
-                        </Box>
+                      <MenuItem>
+                        <Link
+                          to={"https://x.com/kaijunka"}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ textDecoration: "none", color: "black" }}
+                        >
+                          <Box display={"flex"} alignItems={"center"}>
+                            <img
+                              src={TwitterIcon}
+                              height={"20px"}
+                              width={"20px"}
+                              style={{
+                                borderRadius: "50px",
+                                marginRight: "10px",
+                              }}
+                            />
+                            <Typography
+                              fontFamily={"Light"}
+                              fontFamily={"Light"}
+                            >
+                              Twitter
+                            </Typography>
+                          </Box>
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          to={
+                            "https://www.instagram.com/kaijunka_hq?igsh=YWNwM2huYnhzZnQ3&utm_source=qr"
+                          }
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ textDecoration: "none", color: "black" }}
+                        >
+                          <Box display={"flex"} alignItems={"center"}>
+                            <img
+                              src={InstagramIcon}
+                              height={"20px"}
+                              width={"20px"}
+                              style={{
+                                borderRadius: "50px",
+                                marginRight: "10px",
+                              }}
+                            />
+                            <Typography
+                              fontFamily={"Light"}
+                              fontFamily={"Light"}
+                            >
+                              Instagram
+                            </Typography>
+                          </Box>
+                        </Link>
+                      </MenuItem>
+                      <MenuItem>
+                        <Link
+                          to={"https://www.reddit.com/r/Kaijunka/s/uHOsiD8GmK"}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ textDecoration: "none", color: "black" }}
+                        >
+                          <Box display={"flex"} alignItems={"center"}>
+                            <img
+                              src={RedditIcon}
+                              height={"20px"}
+                              width={"20px"}
+                              style={{
+                                borderRadius: "50px",
+                                marginRight: "10px",
+                              }}
+                            />
+                            <Typography
+                              fontFamily={"Light"}
+                              fontFamily={"Light"}
+                            >
+                              Reddit
+                            </Typography>
+                          </Box>
+                        </Link>
                       </MenuItem>
                       <MenuItem
                         onClick={() => {
@@ -263,56 +325,30 @@ const AboutPage = () => {
                           navigate("/about");
                         }}
                       >
-                        <Box display={"flex"} alignItems={"center"}>
-                          <img
-                            src={InstagramIcon}
-                            height={"20px"}
-                            width={"20px"}
-                            style={{
-                              borderRadius: "50px",
-                              marginRight: "10px",
-                            }}
-                          />
-                          Instagram
-                        </Box>
-                      </MenuItem>
-                      <MenuItem
-                        onClick={() => {
-                          setAnchorEl(null);
-                          navigate("/about");
-                        }}
-                      >
-                        <Box display={"flex"} alignItems={"center"}>
-                          <img
-                            src={RedditIcon}
-                            height={"20px"}
-                            width={"20px"}
-                            style={{
-                              borderRadius: "50px",
-                              marginRight: "10px",
-                            }}
-                          />
-                          Reddit
-                        </Box>
-                      </MenuItem>
-                      <MenuItem
-                        onClick={() => {
-                          setAnchorEl(null);
-                          navigate("/");
-                        }}
-                      >
-                        <Box display={"flex"} alignItems={"center"}>
-                          <img
-                            src={TiktokLogo}
-                            height={"20px"}
-                            width={"20px"}
-                            style={{
-                              borderRadius: "50px",
-                              marginRight: "10px",
-                            }}
-                          />
-                          Tiktok
-                        </Box>
+                        <Link
+                          to={"http://www.tiktok.com/@kaijunka_hq"}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ textDecoration: "none", color: "black" }}
+                        >
+                          <Box display={"flex"} alignItems={"center"}>
+                            <img
+                              src={TiktokLogo}
+                              height={"20px"}
+                              width={"20px"}
+                              style={{
+                                borderRadius: "50px",
+                                marginRight: "10px",
+                              }}
+                            />
+                            <Typography
+                              fontFamily={"Light"}
+                              fontFamily={"Light"}
+                            >
+                              Tiktok
+                            </Typography>
+                          </Box>
+                        </Link>
                       </MenuItem>
                     </Menu>
                   </Menu>
@@ -329,6 +365,7 @@ const AboutPage = () => {
               <Box display={"flex"} columnGap={10}>
                 <Typography
                   fontFamily={"Light"}
+                  fontFamily={"Light"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -340,6 +377,7 @@ const AboutPage = () => {
                 </Typography>
 
                 <Typography
+                  fontFamily={"Light"}
                   fontFamily={"Light"}
                   variant="h6"
                   fontWeight={800}
@@ -353,12 +391,12 @@ const AboutPage = () => {
 
                 <Typography
                   fontFamily={"Light"}
+                  fontFamily={"Light"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
                   sx={{ flexGrow: 1, cursor: "pointer" }}
                   textTransform={"uppercase"}
-                  // onClick={() => navigate("/about")}
                   onClick={handleClickChar}
                 >
                   More
@@ -379,7 +417,9 @@ const AboutPage = () => {
                       alignItems={"center"}
                       onClick={() => navigate("/more")}
                     >
-                      <Typography fontFamily={"Light"}>Our Mission</Typography>
+                      <Typography fontFamily={"Light"} fontFamily={"Light"}>
+                        Our Mission
+                      </Typography>
                     </Box>
                   </MenuItem>
                   <MenuItem>
@@ -388,7 +428,9 @@ const AboutPage = () => {
                       alignItems={"center"}
                       onClick={() => navigate("/more")}
                     >
-                      <Typography fontFamily={"Light"}>Team</Typography>
+                      <Typography fontFamily={"Light"} fontFamily={"Light"}>
+                        Team
+                      </Typography>
                     </Box>
                   </MenuItem>
                   <MenuItem>
@@ -397,7 +439,9 @@ const AboutPage = () => {
                       alignItems={"center"}
                       onClick={() => navigate("/more")}
                     >
-                      <Typography fontFamily={"Light"}>Episodes</Typography>
+                      <Typography fontFamily={"Light"} fontFamily={"Light"}>
+                        Episodes
+                      </Typography>
                     </Box>
                   </MenuItem>
                   <MenuItem>
@@ -406,14 +450,26 @@ const AboutPage = () => {
                       alignItems={"center"}
                       onClick={() => navigate("/more")}
                     >
-                      <Typography fontFamily={"Light"}>
+                      <Typography fontFamily={"Light"} fontFamily={"Light"}>
                         <Tooltip title="Coming Soon">News</Tooltip>
                       </Typography>
                     </Box>
                   </MenuItem>
                 </Menu>
 
+                {/* <Typography fontFamily={"Light"}
+                    fontFamily={"Light"}
+                    variant="h6"
+                    fontWeight={800}
+                    component="div"
+                    sx={{ flexGrow: 1, cursor: "pointer" }}
+                    textTransform={"uppercase"}
+                  >
+                    <Tooltip title="Coming Soon">More</Tooltip>
+                  </Typography> */}
+
                 <Typography
+                  fontFamily={"Light"}
                   fontFamily={"Light"}
                   variant="h6"
                   fontWeight={800}
@@ -425,6 +481,7 @@ const AboutPage = () => {
                 </Typography>
 
                 <Typography
+                  fontFamily={"Light"}
                   fontFamily={"Light"}
                   variant="h6"
                   fontWeight={800}
@@ -459,7 +516,13 @@ const AboutPage = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography fontFamily={"Light"}>Twitter</Typography>
+                        <Typography
+                          fontFamily={"Light"}
+                          fontFamily={"Light"}
+                          variant="h6"
+                        >
+                          Twitter
+                        </Typography>
                       </Box>
                     </Link>
                   </MenuItem>
@@ -479,7 +542,13 @@ const AboutPage = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography fontFamily={"Light"}>Instagram</Typography>
+                        <Typography
+                          fontFamily={"Light"}
+                          fontFamily={"Light"}
+                          variant="h6"
+                        >
+                          Instagram
+                        </Typography>
                       </Box>
                     </Link>
                   </MenuItem>
@@ -497,7 +566,13 @@ const AboutPage = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography fontFamily={"Light"}>Reddit</Typography>
+                        <Typography
+                          fontFamily={"Light"}
+                          fontFamily={"Light"}
+                          variant="h6"
+                        >
+                          Reddit
+                        </Typography>
                       </Box>
                     </Link>
                   </MenuItem>
@@ -520,7 +595,13 @@ const AboutPage = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography fontFamily={"Light"}>Tiktok</Typography>
+                        <Typography
+                          fontFamily={"Light"}
+                          fontFamily={"Light"}
+                          variant="h6"
+                        >
+                          Tiktok
+                        </Typography>
                       </Box>
                     </Link>
                   </MenuItem>
@@ -538,6 +619,7 @@ const AboutPage = () => {
               onClick={() => (userAddress ? {} : connectwalletHandler())}
             >
               <Typography
+                fontFamily={"Light"}
                 fontFamily={"Light"}
                 color={"black"}
                 fontWeight={700}
@@ -557,177 +639,180 @@ const AboutPage = () => {
       </Box>
 
       <Box
-        marginTop={"60px"}
         display={"flex"}
         flexDirection={"column"}
-        width={"100%"}
-        //   alignItems={"center"}
-        justifyContent={"center"}
-        // alignItems={"start"}
-        // sx={{ background: "#ff9935" }}
-        marginBottom={"50px"}
+        alignItems={"center"}
+        mt={5}
+        px={1}
       >
-        <Box>
-          <Lottie options={defaultOptions} />
-        </Box>
-
-        <Typography
-          fontFamily={"Light"}
-          marginTop={"30px"}
-          // fontFamily={"Visage"}
-          fontSize={"59px"}
-          fontWeight={700}
+        <Box
+          display={"flex"}
+          flexDirection={"column"}
+          width={{ xs: "100%", lg: "60%" }}
+          columnGap={2}
         >
-          About
-        </Typography>
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            justifyContent={"center"}
+          >
+            <Typography
+              fontFamily={"Light"}
+              fontSize={"30px"}
+              fontWeight={700}
+              mb={2}
+            >
+              The Begining
+            </Typography>
+            <Typography fontFamily={"Light"} fontSize={"18px"} mb={2}>
+              Vinod Vijay wasn’t an artist by profession. As a consultant with a
+              background in Engineering and Data Analytics, his daily work
+              revolved around numbers and systems. However, deep down, Vinod had
+              a passion for creativity and a strong desire to make a positive
+              impact on the world. The main motivation behind starting Kaijunka
+              was to spread positivity and teach important morals to kids,
+              especially about the environment.
+            </Typography>
+          </Box>
 
-        <Typography fontFamily={"Light"} marginX={"20px"} variant="h6">
-          <Box mb="10px">
-            Kaijunka creatures are unique and whimsical digital beings that
-            inhabit the Kaijunka universe. They are inspired by memes and pop
-            culture references, each possessing its own distinct personality,
-            appearance, and traits.
-          </Box>
-          <Box mb="10px">
-            From adorable to awe-inspiring, Kaijunka creatures come in different
-            shapes, sizes, and colors, reflecting the diverse and imaginative
-            nature of the meme culture they originate from. Whether they're
-            reimagined versions of iconic internet memes or entirely new
-            creations, Kaijunka creatures capture the essence of internet
-            culture and bring it into the digital realm.
-          </Box>
           <Box>
-            As digital collectibles, Kaijunka creatures can be owned, traded,
-            and showcased by their respective owners, providing a unique and
-            personalised experience for collectors and enthusiasts. With their
-            vibrant designs and rich lore, Kaijunka creatures add depth and
-            excitement to the Kaijunka ecosystem, inviting users to explore,
-            interact, and immerse themselves in a world where memes and monsters
-            collide.
+            <img src={beg1} width={"100%"} height={"280px"} />
+            <img src={beg3} width={"400px"} height={"100%"} />
+            <img src={beg2} width={"400px"} height={"100%"} />
           </Box>
-          {/* Kaijunka creatures are unique and whimsical digital beings that
-          inhabit the Kaijunka universe. They are inspired by memes and pop
-          culture references, each possessing its own distinct personality,
-          appearance, and traits. These creatures come to life as NFTs, serving
-          as digital collectibles and characters within the Kaijunka metaverse.
-          From adorable to awe-inspiring, Kaijunka creatures come in different
-          shapes, sizes, and colors, reflecting the diverse and imaginative
-          nature of the meme culture they originate from. Whether they're
-          reimagined versions of iconic internet memes or entirely new
-          creations, Kaijunka creatures capture the essence of internet culture
-          and bring it into the digital realm. As digital collectibles, Kaijunka
-          creatures can be owned, traded, and showcased by their respective
-          owners, providing a unique and personalized experience for collectors
-          and enthusiasts. With their vibrant designs and rich lore, Kaijunka
-          creatures add depth and excitement to the Kaijunka ecosystem, inviting
-          users to explore, interact, and immerse themselves in a world where
-          memes and monsters collide. */}
-        </Typography>
-
-        <Typography
-          fontFamily={"Light"}
-          marginTop={"30px"}
-          // fontFamily={"Visage"}
-          fontSize={"59px"}
-          fontWeight={700}
-        >
-          Meet the characters
-        </Typography>
+        </Box>
 
         <Box
           display={"flex"}
-          width={"98.5%"}
-          justifyContent={"space-between"}
+          flexDirection={"column"}
+          width={{ xs: "100%", lg: "60%" }}
           columnGap={2}
-          rowGap={2}
-          marginLeft={"5px"}
-          // marginTop={"30px"}
-          flexWrap={"wrap"}
-          alignItems={"center"}
+          mt={10}
         >
-          <Box>
-            <Box>
-              <img
-                src={Char4}
-                width={size[0] < 800 ? "100px" : "220px"}
-                height={size[0] < 800 ? "100px" : "220px"}
-                style={{ position: "relative", bottom: "-3px" }}
-              />
-            </Box>
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            justifyContent={"center"}
+          >
             <Typography
               fontFamily={"Light"}
-              fontSize={size[0] < 800 ? "15px" : "38px"}
-              fontWeight={800}
-              marginTop={"10px"}
+              fontSize={"30px"}
+              fontWeight={700}
+              mb={2}
             >
-              Kiki
+              Unreleased work
+            </Typography>
+            <Typography fontFamily={"Light"} fontSize={"18px"} mb={2}>
+              Inspired by the art of Tyler Hobbs, known for his work on Fidenza,
+              Vinod decided to channel his engineering skills into creating art.
+              He took the concept of flow fields and added a collision detection
+              algorithm to craft vivid landscapes. These landscapes weren’t just
+              random; they were designed to flow harmoniously around buildings,
+              creating a unique visual style that became the hallmark of
+              Kaijunka. Despite his deep interest in algorithmic art, Vinod
+              initially didn't believe his creations were worthy of becoming
+              proper art. However, driven by a desire to spread positivity and
+              teach important values to the next generation, he persevered.
             </Typography>
           </Box>
 
           <Box>
-            <Box>
-              <img
-                src={Char2}
-                width={size[0] < 800 ? "100px" : "220px"}
-                height={size[0] < 800 ? "100px" : "220px"}
-                style={{ position: "relative", bottom: "-3px" }}
-              />
-            </Box>
+            <img src={work1} width={"100%"} height={"380px"} />
+            <img src={work2} width={"400px"} height={"280px"} />
+            <img src={work3} width={"400px"} height={"280px"} />
+          </Box>
+        </Box>
+
+        <Box
+          display={"flex"}
+          flexDirection={"column"}
+          width={{ xs: "100%", lg: "60%" }}
+          columnGap={2}
+          mt={10}
+        >
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            justifyContent={"center"}
+          >
             <Typography
               fontFamily={"Light"}
-              fontSize={size[0] < 800 ? "15px" : "38px"}
-              fontWeight={800}
-              marginTop={"10px"}
+              fontSize={"30px"}
+              fontWeight={700}
+              mb={2}
             >
-              Koko
+              From Designs to Animation
+            </Typography>
+            <Typography fontFamily={"Light"} fontSize={"18px"} mb={2}>
+              Once the flow field landscapes were perfected, they became the
+              foundation for the first set of gifs. These gifs, rich in detail
+              and movement, were then used to create the introduction video for
+              Kaijunka's two short animation movies. These movies now serve as a
+              crucial part of Kaijunka's mission—spreading positivity and
+              environmental awareness to a young audience.
             </Typography>
           </Box>
 
           <Box>
-            <Box>
-              <img
-                src={Char3}
-                width={size[0] < 800 ? "100px" : "220px"}
-                height={size[0] < 800 ? "100px" : "220px"}
-                style={{ position: "relative", bottom: "-3px" }}
-              />
-            </Box>
+            <img
+              src={design}
+              width={"400px"}
+              height={"280px"}
+              style={{ marginRight: "15px" }}
+            />
+            <img src={animation} width={"400px"} height={"280px"} />
+          </Box>
+        </Box>
+
+        <Box
+          display={"flex"}
+          flexDirection={"column"}
+          width={{ xs: "100%", lg: "60%" }}
+          columnGap={2}
+          mt={10}
+        >
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            justifyContent={"center"}
+          >
             <Typography
               fontFamily={"Light"}
-              fontSize={size[0] < 800 ? "15px" : "38px"}
-              fontWeight={800}
-              marginTop={"10px"}
+              fontSize={"30px"}
+              fontWeight={700}
+              mb={2}
             >
-              Kiku
+              The Evolution: From Idea to Impact
+            </Typography>
+            <Typography fontFamily={"Light"} fontSize={"18px"} mb={2}>
+              Vinod's journey from an Engineer to the creator of Kaijunka is a
+              testament to the power of combining technical expertise with
+              creative passion.Kaijunka is not just a project; it’s a movement
+              aimed at teaching the next generation about the importance of
+              positivity, caring for the environment, and embracing creativity
+              through memes. As memes have become a universal language, Kaijunka
+              taps into this cultural phenomenon to spread its message far and
+              wide. By encouraging the community to create and share their own
+              Kaijunka-inspired memes, the project fosters a sense of belonging
+              and creativity, making it a truly community-driven initiative.
+            </Typography>
+
+            <Typography fontFamily={"Light"}>
+              Join us in this journey and be part of the Kaijunka story.
             </Typography>
           </Box>
 
           <Box>
-            <Box>
-              <img
-                src={Char1}
-                width={size[0] < 800 ? "100px" : "220px"}
-                height={size[0] < 800 ? "100px" : "220px"}
-                style={{ position: "relative", bottom: "-3px" }}
-              />
-            </Box>
-            <Typography
-              fontFamily={"Light"}
-              fontSize={size[0] < 800 ? "15px" : "38px"}
-              fontWeight={800}
-              marginTop={"10px"}
-            >
-              Cheeru
-            </Typography>
+            <img src={evolutionImg} width={"400px"} height={"280px"} />
           </Box>
         </Box>
       </Box>
 
-      <Box sx={{ position: "relative", bottom: "5px" }}>
+      <Box sx={{ position: "relative", bottom: "5px" }} mt={3}>
         © 2024 | kaijunka Project. All rights reserved.
       </Box>
     </Box>
   );
 };
 
-export default AboutPage;
+export default Story;

@@ -9,6 +9,8 @@ import {
 } from "react-router-dom";
 import LandingPage from "./pages/Landing";
 import AboutPage from "./pages/About";
+import OurMission from "./pages/OurMessage";
+import Story from "./pages/Story";
 
 function App() {
   // new MetaMaskSDK({
@@ -21,6 +23,8 @@ function App() {
       <>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/more" element={<OurMission />} />
+        <Route path="/story" element={<Story />} />
       </>
     )
   );
