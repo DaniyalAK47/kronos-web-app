@@ -722,9 +722,9 @@ const OurMission = () => {
                 societal challenges. Through storytelling, art, and technology,
                 Kaijunka envisions a future where every individual is empowered
                 to challenge the status quo, cultivate meaningful connections,
-                and contribute to a more just and enComic Neueened society."
-                This vision statement reflects the balance between Kaijunka's
-                ancient roots and its modern-day relevance, emphasizing the
+                and contribute to a more just and enlightened society. This
+                vision statement reflects the balance between Kaijunka's ancient
+                roots and its modern-day relevance, emphasizing the
                 community-driven aspect of the project while inspiring
                 participants to engage with deeper moral and societal themes.
               </Typography>
