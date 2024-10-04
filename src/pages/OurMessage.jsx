@@ -179,7 +179,10 @@ const OurMission = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"} fontFamily={"Light"}>
+                          <Typography
+                            fontFamily={"Comic Neue"}
+                            fontFamily={"Comic Neue"}
+                          >
                             Our Mission
                           </Typography>
                         </Box>
@@ -188,9 +191,12 @@ const OurMission = () => {
                         <Box
                           display={"flex"}
                           alignItems={"center"}
-                          onClick={() => navigate("/more")}
+                          onClick={() => navigate("/team")}
                         >
-                          <Typography fontFamily={"Light"} fontFamily={"Light"}>
+                          <Typography
+                            fontFamily={"Comic Neue"}
+                            fontFamily={"Comic Neue"}
+                          >
                             Team
                           </Typography>
                         </Box>
@@ -201,7 +207,10 @@ const OurMission = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"} fontFamily={"Light"}>
+                          <Typography
+                            fontFamily={"Comic Neue"}
+                            fontFamily={"Comic Neue"}
+                          >
                             Episodes
                           </Typography>
                         </Box>
@@ -212,7 +221,10 @@ const OurMission = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"} fontFamily={"Light"}>
+                          <Typography
+                            fontFamily={"Comic Neue"}
+                            fontFamily={"Comic Neue"}
+                          >
                             <Tooltip title="Coming Soon">News</Tooltip>
                           </Typography>
                         </Box>
@@ -250,8 +262,8 @@ const OurMission = () => {
                               }}
                             />
                             <Typography
-                              fontFamily={"Light"}
-                              fontFamily={"Light"}
+                              fontFamily={"Comic Neue"}
+                              fontFamily={"Comic Neue"}
                             >
                               Twitter
                             </Typography>
@@ -278,8 +290,8 @@ const OurMission = () => {
                               }}
                             />
                             <Typography
-                              fontFamily={"Light"}
-                              fontFamily={"Light"}
+                              fontFamily={"Comic Neue"}
+                              fontFamily={"Comic Neue"}
                             >
                               Instagram
                             </Typography>
@@ -304,8 +316,8 @@ const OurMission = () => {
                               }}
                             />
                             <Typography
-                              fontFamily={"Light"}
-                              fontFamily={"Light"}
+                              fontFamily={"Comic Neue"}
+                              fontFamily={"Comic Neue"}
                             >
                               Reddit
                             </Typography>
@@ -335,8 +347,8 @@ const OurMission = () => {
                               }}
                             />
                             <Typography
-                              fontFamily={"Light"}
-                              fontFamily={"Light"}
+                              fontFamily={"Comic Neue"}
+                              fontFamily={"Comic Neue"}
                             >
                               Tiktok
                             </Typography>
@@ -357,8 +369,8 @@ const OurMission = () => {
             {size?.[0] > 800 && (
               <Box display={"flex"} columnGap={10}>
                 <Typography
-                  fontFamily={"Light"}
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -370,8 +382,8 @@ const OurMission = () => {
                 </Typography>
 
                 <Typography
-                  fontFamily={"Light"}
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -383,8 +395,8 @@ const OurMission = () => {
                 </Typography>
 
                 <Typography
-                  fontFamily={"Light"}
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -411,8 +423,15 @@ const OurMission = () => {
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none", color: "black" }}
                       > */}
-                    <Box display={"flex"} alignItems={"center"}>
-                      <Typography fontFamily={"Light"} fontFamily={"Light"}>
+                    <Box
+                      display={"flex"}
+                      alignItems={"center"}
+                      onClick={() => navigate("/more")}
+                    >
+                      <Typography
+                        fontFamily={"Comic Neue"}
+                        fontFamily={"Comic Neue"}
+                      >
                         Our Mission
                       </Typography>
                     </Box>
@@ -427,8 +446,15 @@ const OurMission = () => {
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none", color: "black" }}
                       > */}
-                    <Box display={"flex"} alignItems={"center"}>
-                      <Typography fontFamily={"Light"} fontFamily={"Light"}>
+                    <Box
+                      display={"flex"}
+                      alignItems={"center"}
+                      onClick={() => navigate("/team")}
+                    >
+                      <Typography
+                        fontFamily={"Comic Neue"}
+                        fontFamily={"Comic Neue"}
+                      >
                         Team
                       </Typography>
                     </Box>
@@ -442,7 +468,9 @@ const OurMission = () => {
                         style={{ textDecoration: "none", color: "black" }}
                       > */}
                     <Box display={"flex"} alignItems={"center"}>
-                      <Typography fontFamily={"Light"}>Episodes</Typography>
+                      <Typography fontFamily={"Comic Neue"}>
+                        Episodes
+                      </Typography>
                     </Box>
                     {/* </Link> */}
                   </MenuItem>
@@ -454,7 +482,10 @@ const OurMission = () => {
                         style={{ textDecoration: "none", color: "black" }}
                       > */}
                     <Box display={"flex"} alignItems={"center"}>
-                      <Typography fontFamily={"Light"} fontFamily={"Light"}>
+                      <Typography
+                        fontFamily={"Comic Neue"}
+                        fontFamily={"Comic Neue"}
+                      >
                         <Tooltip title="Coming Soon">News</Tooltip>
                       </Typography>
                     </Box>
@@ -462,8 +493,8 @@ const OurMission = () => {
                   </MenuItem>
                 </Menu>
 
-                {/* <Typography fontFamily={"Light"}
-                    fontFamily={"Light"}
+                {/* <Typography fontFamily={"Comic Neue"}
+                    fontFamily={"Comic Neue"}
                     variant="h6"
                     fontWeight={800}
                     component="div"
@@ -474,7 +505,7 @@ const OurMission = () => {
                   </Typography> */}
 
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -485,7 +516,7 @@ const OurMission = () => {
                 </Typography>
 
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -519,7 +550,7 @@ const OurMission = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography fontFamily={"Light"} variant="h6">
+                        <Typography fontFamily={"Comic Neue"} variant="h6">
                           Twitter
                         </Typography>
                       </Box>
@@ -541,7 +572,7 @@ const OurMission = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography fontFamily={"Light"} variant="h6">
+                        <Typography fontFamily={"Comic Neue"} variant="h6">
                           Instagram
                         </Typography>
                       </Box>
@@ -561,7 +592,7 @@ const OurMission = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography fontFamily={"Light"} variant="h6">
+                        <Typography fontFamily={"Comic Neue"} variant="h6">
                           Reddit
                         </Typography>
                       </Box>
@@ -586,7 +617,7 @@ const OurMission = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography fontFamily={"Light"} variant="h6">
+                        <Typography fontFamily={"Comic Neue"} variant="h6">
                           Tiktok
                         </Typography>
                       </Box>
@@ -606,8 +637,8 @@ const OurMission = () => {
               onClick={() => (userAddress ? {} : connectwalletHandler())}
             >
               <Typography
-                fontFamily={"Light"}
-                fontFamily={"Light"}
+                fontFamily={"Comic Neue"}
+                fontFamily={"Comic Neue"}
                 color={"black"}
                 fontWeight={700}
                 maxWidth={userAddress ? "200px" : "120px"}
@@ -633,7 +664,7 @@ const OurMission = () => {
         sx={{ background: "#fef6db" }}
       >
         <Box
-          width={{ xs: "100%", xl: "60%" }}
+          width={{ xs: "100%", xl: "70%" }}
           display={"flex"}
           flexDirection={{ xs: "column", md: "row" }}
           justifyContent={{ lg: "center" }}
@@ -643,25 +674,25 @@ const OurMission = () => {
           <Box>
             <img
               src={HomeImg}
-              height={"400px"}
-              width={size[0] < 500 ? "100%" : "500px"}
+              height={"660px"}
+              width={size[0] < 500 ? "100%" : "780px"}
             />
           </Box>
 
           <Box>
             <Box p={1}>
               <Typography
-                fontFamily={"Light"}
+                fontFamily={"Comic Neue"}
                 variant="caption"
                 fontWeight={800}
-                fontSize={"20px"}
+                fontSize={"25px"}
               >
                 OUR MISSION
               </Typography>
               <Typography
-                fontFamily={"Light"}
+                fontFamily={"Comic Neue"}
                 textAlign={"left"}
-                fontSize={"15px"}
+                fontSize={"18px"}
                 mb={2}
               >
                 At Kaijunka, our mission is to empower and unite a global
@@ -673,17 +704,17 @@ const OurMission = () => {
               </Typography>
 
               <Typography
-                fontFamily={"Light"}
+                fontFamily={"Comic Neue"}
                 variant="caption"
                 fontWeight={800}
-                fontSize={"20px"}
+                fontSize={"25px"}
               >
                 OUR VISION
               </Typography>
               <Typography
-                fontFamily={"Light"}
+                fontFamily={"Comic Neue"}
                 textAlign={"left"}
-                fontSize={"15px"}
+                fontSize={"18px"}
               >
                 To create a world where ancient wisdom and modern innovation
                 coexist harmoniously, inspiring a global community to embrace
@@ -691,9 +722,9 @@ const OurMission = () => {
                 societal challenges. Through storytelling, art, and technology,
                 Kaijunka envisions a future where every individual is empowered
                 to challenge the status quo, cultivate meaningful connections,
-                and contribute to a more just and enlightened society." This
-                vision statement reflects the balance between Kaijunka's ancient
-                roots and its modern-day relevance, emphasizing the
+                and contribute to a more just and enComic Neueened society."
+                This vision statement reflects the balance between Kaijunka's
+                ancient roots and its modern-day relevance, emphasizing the
                 community-driven aspect of the project while inspiring
                 participants to engage with deeper moral and societal themes.
               </Typography>
@@ -702,7 +733,7 @@ const OurMission = () => {
         </Box>
       </Box>
 
-      <Box
+      {/* <Box
         display={"flex"}
         justifyContent={"center"}
         flexDirection={{ xs: "column-reverse", lg: "row" }}
@@ -716,17 +747,17 @@ const OurMission = () => {
           alignItems={{ xs: "center", lg: "start" }}
         >
           <Typography
-            fontFamily={"Light"}
+            fontFamily={"Comic Neue"}
             fontWeight={700}
             fontSize={"28px"}
             mb={{ xs: 2, lg: 15 }}
           >
             Team
           </Typography>
-          <Typography fontFamily={"Light"} fontWeight={700} fontSize={"18px"}>
+          <Typography fontFamily={"Comic Neue"} fontWeight={700} fontSize={"18px"}>
             Vinod Vijay
           </Typography>
-          <Typography fontFamily={"Light"} mb={{ xs: 2, lg: 18 }}>
+          <Typography fontFamily={"Comic Neue"} mb={{ xs: 2, lg: 18 }}>
             (CEO - Nyew Research)
           </Typography>
           <Box
@@ -743,7 +774,7 @@ const OurMission = () => {
               mr={{ lg: 10 }}
             >
               <Typography
-                fontFamily={"Light"}
+                fontFamily={"Comic Neue"}
                 fontWeight={700}
                 fontSize={"18px"}
                 mb={2}
@@ -766,13 +797,13 @@ const OurMission = () => {
                   }}
                 />
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   fontWeight={700}
                   fontSize={"18px"}
                 >
                   Sahana
                 </Typography>
-                <Typography fontFamily={"Light"} mb={1} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
                   Creative director
                 </Typography>
               </Box>
@@ -792,13 +823,13 @@ const OurMission = () => {
                   }}
                 />
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   fontWeight={700}
                   fontSize={"18px"}
                 >
                   BrenFi
                 </Typography>
-                <Typography fontFamily={"Light"} mb={1} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
                   Art director
                 </Typography>
               </Box>
@@ -818,13 +849,13 @@ const OurMission = () => {
                   }}
                 />
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   fontWeight={700}
                   fontSize={"18px"}
                 >
                   LondRain
                 </Typography>
-                <Typography fontFamily={"Light"} mb={1} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
                   Illustrator
                 </Typography>
               </Box>
@@ -844,13 +875,13 @@ const OurMission = () => {
                   }}
                 />
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   fontWeight={700}
                   fontSize={"18px"}
                 >
                   Mueed
                 </Typography>
-                <Typography fontFamily={"Light"} mb={1} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
                   Blockchain Engineering Lead
                 </Typography>
               </Box>
@@ -870,13 +901,13 @@ const OurMission = () => {
                   }}
                 />
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   fontWeight={700}
                   fontSize={"18px"}
                 >
                   Anupa
                 </Typography>
-                <Typography fontFamily={"Light"} mb={9} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={9} width={"200px"}>
                   Dev Ops Engineer
                 </Typography>
               </Box>
@@ -887,7 +918,7 @@ const OurMission = () => {
               alignItems={{ xs: "center", lg: "start" }}
             >
               <Typography
-                fontFamily={"Light"}
+                fontFamily={"Comic Neue"}
                 fontWeight={700}
                 fontSize={"18px"}
                 mb={2}
@@ -910,13 +941,13 @@ const OurMission = () => {
                   }}
                 />
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   fontWeight={700}
                   fontSize={"18px"}
                 >
                   Savitha
                 </Typography>
-                <Typography fontFamily={"Light"} mb={1} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
                   ex-Meta
                 </Typography>
               </Box>
@@ -936,13 +967,13 @@ const OurMission = () => {
                   }}
                 />
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   fontWeight={700}
                   fontSize={"18px"}
                 >
                   Shivani
                 </Typography>
-                <Typography fontFamily={"Light"} mb={1} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
                   ex-Dell
                 </Typography>
               </Box>
@@ -962,13 +993,13 @@ const OurMission = () => {
                   }}
                 />
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   fontWeight={700}
                   fontSize={"18px"}
                 >
                   Niranjan
                 </Typography>
-                <Typography fontFamily={"Light"} mb={1} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
                   Schneider
                 </Typography>
               </Box>
@@ -988,13 +1019,13 @@ const OurMission = () => {
                   }}
                 />
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   fontWeight={700}
                   fontSize={"18px"}
                 >
                   Pooventhan
                 </Typography>
-                <Typography fontFamily={"Light"} mb={1} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
                   Witron
                 </Typography>
               </Box>
@@ -1005,7 +1036,7 @@ const OurMission = () => {
         <Box>
           <img src={ceoImage} height={"330px"} />
           <Typography
-            fontFamily={"Light"}
+            fontFamily={"Comic Neue"}
             // fontSize={"30px"}
             fontWeight={600}
             textTransform={"uppercase"}
@@ -1015,10 +1046,12 @@ const OurMission = () => {
             Click to know the story behind Kaijunka
           </Typography>
         </Box>
-      </Box>
+      </Box> */}
 
-      <Box sx={{ position: "relative", bottom: "5px" }}>
-        © 2024 | kaijunka Project. All rights reserved.
+      <Box sx={{ position: "absolute", bottom: "5px", left: "40%" }}>
+        <Typography fontFamily={"Comic Neue"}>
+          © 2024 | kaijunka Project. All rights reserved.
+        </Typography>
       </Box>
     </Box>
   );

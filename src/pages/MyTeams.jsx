@@ -29,17 +29,9 @@ import RedditIcon from "../assets/reddit.png";
 import TiktokLogo from "../assets/tiktok.png";
 import ceoImage from "../assets/ceoimg.jpg";
 
-import evolutionImg from "../assets/evolution.png";
-import design from "../assets/design1.jpg";
-import animation from "../assets/animation.gif";
-import work1 from "../assets/work1.jpg";
-import work2 from "../assets/work2.png";
-import work3 from "../assets/work3.png";
-import beg1 from "../assets/beg1.jpg";
-import beg2 from "../assets/beg2.png";
-import beg3 from "../assets/beg3.png";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
-const Story = () => {
+const MyTeams = () => {
   const { sdk } = useSDK();
   const [size, setSize] = useState([0, 0]);
   const [userAddress, setUserAddress] = useState(
@@ -122,6 +114,7 @@ const Story = () => {
       }
     }
   };
+
   return (
     <Box maxWidth={"100vw"}>
       <Box sx={{ flexGrow: 1 }} maxWidth={"100vw"}>
@@ -186,10 +179,7 @@ const Story = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography
-                            fontFamily={"Comic Neue"}
-                            fontFamily={"Comic Neue"}
-                          >
+                          <Typography fontFamily={"Comic Neue"} fontFamily={"Comic Neue"}>
                             Our Mission
                           </Typography>
                         </Box>
@@ -198,12 +188,9 @@ const Story = () => {
                         <Box
                           display={"flex"}
                           alignItems={"center"}
-                          onClick={() => navigate("/team")}
+                          onClick={() => navigate("/teams")}
                         >
-                          <Typography
-                            fontFamily={"Comic Neue"}
-                            fontFamily={"Comic Neue"}
-                          >
+                          <Typography fontFamily={"Comic Neue"} fontFamily={"Comic Neue"}>
                             Team
                           </Typography>
                         </Box>
@@ -214,10 +201,7 @@ const Story = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography
-                            fontFamily={"Comic Neue"}
-                            fontFamily={"Comic Neue"}
-                          >
+                          <Typography fontFamily={"Comic Neue"} fontFamily={"Comic Neue"}>
                             Episodes
                           </Typography>
                         </Box>
@@ -228,10 +212,7 @@ const Story = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography
-                            fontFamily={"Comic Neue"}
-                            fontFamily={"Comic Neue"}
-                          >
+                          <Typography fontFamily={"Comic Neue"} fontFamily={"Comic Neue"}>
                             <Tooltip title="Coming Soon">News</Tooltip>
                           </Typography>
                         </Box>
@@ -424,60 +405,68 @@ const Story = () => {
                   sx={{ borderRadius: "5px" }}
                 >
                   <MenuItem>
+                    {/* <Link
+                        to={"https://x.com/kaijunka"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "black" }}
+                      > */}
                     <Box
                       display={"flex"}
                       alignItems={"center"}
                       onClick={() => navigate("/more")}
                     >
-                      <Typography
-                        fontFamily={"Comic Neue"}
-                        fontFamily={"Comic Neue"}
-                      >
+                      <Typography fontFamily={"Comic Neue"} fontFamily={"Comic Neue"}>
                         Our Mission
                       </Typography>
                     </Box>
+                    {/* </Link> */}
                   </MenuItem>
                   <MenuItem>
+                    {/* <Link
+                        to={
+                          "https://www.instagram.com/kaijunka_hq?igsh=YWNwM2huYnhzZnQ3&utm_source=qr"
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "black" }}
+                      > */}
                     <Box
                       display={"flex"}
                       alignItems={"center"}
                       onClick={() => navigate("/team")}
                     >
-                      <Typography
-                        fontFamily={"Comic Neue"}
-                        fontFamily={"Comic Neue"}
-                      >
+                      <Typography fontFamily={"Comic Neue"} fontFamily={"Comic Neue"}>
                         Team
                       </Typography>
                     </Box>
+                    {/* </Link> */}
                   </MenuItem>
                   <MenuItem>
-                    <Box
-                      display={"flex"}
-                      alignItems={"center"}
-                      onClick={() => navigate("/more")}
-                    >
-                      <Typography
-                        fontFamily={"Comic Neue"}
-                        fontFamily={"Comic Neue"}
-                      >
-                        Episodes
-                      </Typography>
+                    {/* <Link
+                        to={"https://www.reddit.com/r/Kaijunka/s/uHOsiD8GmK"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "black" }}
+                      > */}
+                    <Box display={"flex"} alignItems={"center"}>
+                      <Typography fontFamily={"Comic Neue"}>Episodes</Typography>
                     </Box>
+                    {/* </Link> */}
                   </MenuItem>
                   <MenuItem>
-                    <Box
-                      display={"flex"}
-                      alignItems={"center"}
-                      onClick={() => navigate("/more")}
-                    >
-                      <Typography
-                        fontFamily={"Comic Neue"}
-                        fontFamily={"Comic Neue"}
-                      >
+                    {/* <Link
+                        to={"http://www.tiktok.com/@kaijunka_hq"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "black" }}
+                      > */}
+                    <Box display={"flex"} alignItems={"center"}>
+                      <Typography fontFamily={"Comic Neue"} fontFamily={"Comic Neue"}>
                         <Tooltip title="Coming Soon">News</Tooltip>
                       </Typography>
                     </Box>
+                    {/* </Link> */}
                   </MenuItem>
                 </Menu>
 
@@ -494,7 +483,6 @@ const Story = () => {
 
                 <Typography
                   fontFamily={"Comic Neue"}
-                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -505,7 +493,6 @@ const Story = () => {
                 </Typography>
 
                 <Typography
-                  fontFamily={"Comic Neue"}
                   fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
@@ -540,11 +527,7 @@ const Story = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography
-                          fontFamily={"Comic Neue"}
-                          fontFamily={"Comic Neue"}
-                          variant="h6"
-                        >
+                        <Typography fontFamily={"Comic Neue"} variant="h6">
                           Twitter
                         </Typography>
                       </Box>
@@ -566,11 +549,7 @@ const Story = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography
-                          fontFamily={"Comic Neue"}
-                          fontFamily={"Comic Neue"}
-                          variant="h6"
-                        >
+                        <Typography fontFamily={"Comic Neue"} variant="h6">
                           Instagram
                         </Typography>
                       </Box>
@@ -590,11 +569,7 @@ const Story = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography
-                          fontFamily={"Comic Neue"}
-                          fontFamily={"Comic Neue"}
-                          variant="h6"
-                        >
+                        <Typography fontFamily={"Comic Neue"} variant="h6">
                           Reddit
                         </Typography>
                       </Box>
@@ -619,11 +594,7 @@ const Story = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography
-                          fontFamily={"Comic Neue"}
-                          fontFamily={"Comic Neue"}
-                          variant="h6"
-                        >
+                        <Typography fontFamily={"Comic Neue"} variant="h6">
                           Tiktok
                         </Typography>
                       </Box>
@@ -664,182 +635,341 @@ const Story = () => {
 
       <Box
         display={"flex"}
-        flexDirection={"column"}
-        alignItems={"center"}
+        justifyContent={"center"}
+        flexDirection={{ xs: "column-reverse", lg: "row" }}
         pt={5}
-        px={1}
         sx={{ background: "#fef6db" }}
       >
         <Box
+          width={{ xs: "100%", lg: "40%" }}
           display={"flex"}
+          justifyContent={{ xs: "center", lg: "start" }}
           flexDirection={"column"}
-          width={{ xs: "100%", lg: "60%" }}
-          columnGap={2}
+          alignItems={{ xs: "center", lg: "start" }}
         >
+          <Typography
+            fontFamily={"Comic Neue"}
+            fontWeight={700}
+            fontSize={"28px"}
+            mb={{ xs: 2, lg: 18 }}
+          >
+            Team
+          </Typography>
+          <Typography fontFamily={"Comic Neue"} fontWeight={700} fontSize={"18px"}>
+            Vinod Vijay
+          </Typography>
+          <Typography fontFamily={"Comic Neue"} mb={{ xs: 2, lg: 18 }}>
+            (CEO - Nyew Research)
+          </Typography>
           <Box
             display={"flex"}
             flexDirection={"column"}
-            justifyContent={"center"}
+            justifyContent={{ xs: "center", lg: "start" }}
+            width={"100%"}
+            mb={3}
           >
+            {/* <Box> */}
+
+            <Typography
+              fontFamily={"Comic Sans"}
+              fontWeight={700}
+              fontSize={"18px"}
+              mb={2}
+              alignSelf={{ xs: "center", md: "start" }}
+            >
+              Core Team
+            </Typography>
+
+            <Box
+              display={"flex"}
+              flexDirection={{ xs: "column", md: "row" }}
+              alignItems={{ xs: "center", lg: "start" }}
+              mr={{ lg: 10 }}
+            >
+              {/* <Typography
+                fontFamily={"Comic Neue"}
+                fontWeight={700}
+                fontSize={"18px"}
+                mb={2}
+              >
+                Core Team
+              </Typography> */}
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                    fontSize: "150px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Comic Neue"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  Sahana
+                </Typography>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
+                  Creative director
+                </Typography>
+              </Box>
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                    fontSize: "150px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Comic Neue"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  BrenFi
+                </Typography>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
+                  Art director
+                </Typography>
+              </Box>
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                    fontSize: "150px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Comic Neue"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  LondRain
+                </Typography>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
+                  Illustrator
+                </Typography>
+              </Box>
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                    fontSize: "150px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Comic Neue"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  Mueed
+                </Typography>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
+                  Blockchain Engineering Lead
+                </Typography>
+              </Box>
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                    fontSize: "150px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Comic Neue"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  Anupa
+                </Typography>
+                <Typography fontFamily={"Comic Neue"} mb={9} width={"200px"}>
+                  Dev Ops Engineer
+                </Typography>
+              </Box>
+            </Box>
+
             <Typography
               fontFamily={"Comic Neue"}
-              fontSize={"30px"}
               fontWeight={700}
+              fontSize={"18px"}
               mb={2}
+              // alignSelf={"start"}
+              alignSelf={{ xs: "center", md: "start" }}
             >
-              The Beginning
+              Advisors
             </Typography>
-            <Typography fontFamily={"Comic Neue"} fontSize={"18px"} mb={2}>
-              Vinod Vijay wasn’t an artist by profession. As a consultant with a
-              background in Engineering and Data Analytics, his daily work
-              revolved around numbers and systems. However, deep down, Vinod had
-              a passion for creativity and a strong desire to make a positive
-              impact on the world. The main motivation behind starting Kaijunka
-              was to spread positivity and teach important morals to kids,
-              especially about the environment.
-            </Typography>
-          </Box>
 
-          <Box>
-            <img src={beg1} width={"100%"} height={"280px"} />
-            <img src={beg3} width={"400px"} height={"100%"} />
-            <img src={beg2} width={"400px"} height={"100%"} />
+            <Box
+              display={"flex"}
+              // flexDirection={"row"}
+              flexDirection={{ xs: "column", md: "row" }}
+              alignItems={{ xs: "center", lg: "start" }}
+            >
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    fontSize: "150px",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Comic Neue"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  Savitha
+                </Typography>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
+                  ex-Meta
+                </Typography>
+              </Box>
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                    fontSize: "150px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Comic Neue"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  Shivani
+                </Typography>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
+                  ex-Dell
+                </Typography>
+              </Box>
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                    fontSize: "150px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Comic Neue"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  Niranjan
+                </Typography>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
+                  Schneider
+                </Typography>
+              </Box>
+
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <AccountCircleIcon
+                  sx={{
+                    // transform: "scale(7)",
+                    // height: "140px",
+                    // marginLeft: "10px",
+                    fontSize: "150px",
+                  }}
+                />
+                <Typography
+                  fontFamily={"Comic Neue"}
+                  fontWeight={700}
+                  fontSize={"18px"}
+                >
+                  Pooventhan
+                </Typography>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
+                  Witron
+                </Typography>
+              </Box>
+            </Box>
           </Box>
         </Box>
 
-        <Box
-          display={"flex"}
-          flexDirection={"column"}
-          width={{ xs: "100%", lg: "60%" }}
-          columnGap={2}
-          mt={10}
-        >
-          <Box
-            display={"flex"}
-            flexDirection={"column"}
-            justifyContent={"center"}
+        <Box>
+          <img src={ceoImage} height={"330px"} />
+          <Typography
+            fontFamily={"Comic Neue"}
+            // fontSize={"30px"}
+            fontWeight={600}
+            textTransform={"uppercase"}
+            sx={{ cursor: "pointer" }}
+            onClick={() => navigate("/story")}
           >
-            <Typography
-              fontFamily={"Comic Neue"}
-              fontSize={"30px"}
-              fontWeight={700}
-              mb={2}
-            >
-              Unreleased work
-            </Typography>
-            <Typography fontFamily={"Comic Neue"} fontSize={"18px"} mb={2}>
-              Inspired by the art of Tyler Hobbs, known for his work on Fidenza,
-              Vinod decided to channel his engineering skills into creating art.
-              He took the concept of flow fields and added a collision detection
-              algorithm to craft vivid landscapes. These landscapes weren’t just
-              random; they were designed to flow harmoniously around buildings,
-              creating a unique visual style that became the hallmark of
-              Kaijunka. Despite his deep interest in algorithmic art, Vinod
-              initially didn't believe his creations were worthy of becoming
-              proper art. However, driven by a desire to spread positivity and
-              teach important values to the next generation, he persevered.
-            </Typography>
-          </Box>
-
-          <Box>
-            <img src={work1} width={"100%"} height={"380px"} />
-            <img src={work2} width={"400px"} height={"280px"} />
-            <img src={work3} width={"400px"} height={"280px"} />
-          </Box>
-        </Box>
-
-        <Box
-          display={"flex"}
-          flexDirection={"column"}
-          width={{ xs: "100%", lg: "60%" }}
-          columnGap={2}
-          mt={10}
-        >
-          <Box
-            display={"flex"}
-            flexDirection={"column"}
-            justifyContent={"center"}
-          >
-            <Typography
-              fontFamily={"Comic Neue"}
-              fontSize={"30px"}
-              fontWeight={700}
-              mb={2}
-            >
-              From Designs to Animation
-            </Typography>
-            <Typography fontFamily={"Comic Neue"} fontSize={"18px"} mb={2}>
-              Once the flow field landscapes were perfected, they became the
-              foundation for the first set of gifs. These gifs, rich in detail
-              and movement, were then used to create the introduction video for
-              Kaijunka's two short animation movies. These movies now serve as a
-              crucial part of Kaijunka's mission—spreading positivity and
-              environmental awareness to a young audience.
-            </Typography>
-          </Box>
-
-          <Box>
-            <img
-              src={design}
-              width={"400px"}
-              height={"280px"}
-              style={{ marginRight: "15px" }}
-            />
-            <img src={animation} width={"400px"} height={"280px"} />
-          </Box>
-        </Box>
-
-        <Box
-          display={"flex"}
-          flexDirection={"column"}
-          width={{ xs: "100%", lg: "60%" }}
-          columnGap={2}
-          mt={10}
-        >
-          <Box
-            display={"flex"}
-            flexDirection={"column"}
-            justifyContent={"center"}
-          >
-            <Typography
-              fontFamily={"Comic Neue"}
-              fontSize={"30px"}
-              fontWeight={700}
-              mb={2}
-            >
-              The Evolution: From Idea to Impact
-            </Typography>
-            <Typography fontFamily={"Comic Neue"} fontSize={"18px"} mb={2}>
-              Vinod's journey from an Engineer to the creator of Kaijunka is a
-              testament to the power of combining technical expertise with
-              creative passion.Kaijunka is not just a project; it’s a movement
-              aimed at teaching the next generation about the importance of
-              positivity, caring for the environment, and embracing creativity
-              through memes. As memes have become a universal language, Kaijunka
-              taps into this cultural phenomenon to spread its message far and
-              wide. By encouraging the community to create and share their own
-              Kaijunka-inspired memes, the project fosters a sense of belonging
-              and creativity, making it a truly community-driven initiative.
-            </Typography>
-
-            <Typography fontFamily={"Comic Neue"}>
-              Join us in this journey and be part of the Kaijunka story.
-            </Typography>
-          </Box>
-
-          <Box mb={5}>
-            <img src={evolutionImg} width={"400px"} height={"280px"} />
-          </Box>
+            Click to know the story behind Kaijunka
+          </Typography>
         </Box>
       </Box>
 
-      <Box sx={{ position: "relative", bottom: "5px" }} mt={10}>
-        <Typography fontFamily={"Comic Neue"}>
-          © 2024 | kaijunka Project. All rights reserved.
-        </Typography>
+      <Box sx={{ position: "relative", bottom: "5px",mt:10 }}>
+        <Typography fontFamily={"Comic Neue"}>© 2024 | kaijunka Project. All rights reserved.</Typography>
       </Box>
     </Box>
   );
 };
 
-export default Story;
+export default MyTeams;

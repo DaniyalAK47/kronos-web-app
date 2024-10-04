@@ -189,8 +189,19 @@ const AboutPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"}>
+                          <Typography fontFamily={"Comic Neue"}>
                             Our Mission
+                          </Typography>
+                        </Box>
+                      </MenuItem>
+                      <MenuItem>
+                        <Box
+                          display={"flex"}
+                          alignItems={"center"}
+                          onClick={() => navigate("/team")}
+                        >
+                          <Typography fontFamily={"Comic Neue"}>
+                            Team
                           </Typography>
                         </Box>
                       </MenuItem>
@@ -200,7 +211,9 @@ const AboutPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"}>Team</Typography>
+                          <Typography fontFamily={"Comic Neue"}>
+                            Episodes
+                          </Typography>
                         </Box>
                       </MenuItem>
                       <MenuItem>
@@ -209,16 +222,7 @@ const AboutPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"}>Episodes</Typography>
-                        </Box>
-                      </MenuItem>
-                      <MenuItem>
-                        <Box
-                          display={"flex"}
-                          alignItems={"center"}
-                          onClick={() => navigate("/more")}
-                        >
-                          <Typography fontFamily={"Light"}>
+                          <Typography fontFamily={"Comic Neue"}>
                             <Tooltip title="Coming Soon">News</Tooltip>
                           </Typography>
                         </Box>
@@ -328,7 +332,7 @@ const AboutPage = () => {
             {size?.[0] > 800 && (
               <Box display={"flex"} columnGap={10}>
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -340,7 +344,7 @@ const AboutPage = () => {
                 </Typography>
 
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -352,7 +356,7 @@ const AboutPage = () => {
                 </Typography>
 
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -379,7 +383,18 @@ const AboutPage = () => {
                       alignItems={"center"}
                       onClick={() => navigate("/more")}
                     >
-                      <Typography fontFamily={"Light"}>Our Mission</Typography>
+                      <Typography fontFamily={"Comic Neue"}>
+                        Our Mission
+                      </Typography>
+                    </Box>
+                  </MenuItem>
+                  <MenuItem>
+                    <Box
+                      display={"flex"}
+                      alignItems={"center"}
+                      onClick={() => navigate("/team")}
+                    >
+                      <Typography fontFamily={"Comic Neue"}>Team</Typography>
                     </Box>
                   </MenuItem>
                   <MenuItem>
@@ -388,7 +403,9 @@ const AboutPage = () => {
                       alignItems={"center"}
                       onClick={() => navigate("/more")}
                     >
-                      <Typography fontFamily={"Light"}>Team</Typography>
+                      <Typography fontFamily={"Comic Neue"}>
+                        Episodes
+                      </Typography>
                     </Box>
                   </MenuItem>
                   <MenuItem>
@@ -397,16 +414,7 @@ const AboutPage = () => {
                       alignItems={"center"}
                       onClick={() => navigate("/more")}
                     >
-                      <Typography fontFamily={"Light"}>Episodes</Typography>
-                    </Box>
-                  </MenuItem>
-                  <MenuItem>
-                    <Box
-                      display={"flex"}
-                      alignItems={"center"}
-                      onClick={() => navigate("/more")}
-                    >
-                      <Typography fontFamily={"Light"}>
+                      <Typography fontFamily={"Comic Neue"}>
                         <Tooltip title="Coming Soon">News</Tooltip>
                       </Typography>
                     </Box>
@@ -414,7 +422,7 @@ const AboutPage = () => {
                 </Menu>
 
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -425,7 +433,7 @@ const AboutPage = () => {
                 </Typography>
 
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -459,7 +467,9 @@ const AboutPage = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography fontFamily={"Light"}>Twitter</Typography>
+                        <Typography fontFamily={"Comic Neue"}>
+                          Twitter
+                        </Typography>
                       </Box>
                     </Link>
                   </MenuItem>
@@ -479,7 +489,9 @@ const AboutPage = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography fontFamily={"Light"}>Instagram</Typography>
+                        <Typography fontFamily={"Comic Neue"}>
+                          Instagram
+                        </Typography>
                       </Box>
                     </Link>
                   </MenuItem>
@@ -497,7 +509,9 @@ const AboutPage = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography fontFamily={"Light"}>Reddit</Typography>
+                        <Typography fontFamily={"Comic Neue"}>
+                          Reddit
+                        </Typography>
                       </Box>
                     </Link>
                   </MenuItem>
@@ -520,7 +534,9 @@ const AboutPage = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography fontFamily={"Light"}>Tiktok</Typography>
+                        <Typography fontFamily={"Comic Neue"}>
+                          Tiktok
+                        </Typography>
                       </Box>
                     </Link>
                   </MenuItem>
@@ -538,7 +554,7 @@ const AboutPage = () => {
               onClick={() => (userAddress ? {} : connectwalletHandler())}
             >
               <Typography
-                fontFamily={"Light"}
+                fontFamily={"Comic Neue"}
                 color={"black"}
                 fontWeight={700}
                 maxWidth={userAddress ? "200px" : "120px"}
@@ -572,7 +588,7 @@ const AboutPage = () => {
         </Box>
 
         <Typography
-          fontFamily={"Light"}
+          fontFamily={"Comic Neue"}
           marginTop={"30px"}
           // fontFamily={"Visage"}
           fontSize={"59px"}
@@ -581,7 +597,7 @@ const AboutPage = () => {
           About
         </Typography>
 
-        <Typography fontFamily={"Light"} marginX={"20px"} variant="h6">
+        <Typography fontFamily={"Comic Neue"} marginX={"20px"} variant="h6">
           <Box mb="10px">
             Kaijunka creatures are unique and whimsical digital beings that
             inhabit the Kaijunka universe. They are inspired by memes and pop
@@ -625,7 +641,7 @@ const AboutPage = () => {
         </Typography>
 
         <Typography
-          fontFamily={"Light"}
+          fontFamily={"Comic Neue"}
           marginTop={"30px"}
           // fontFamily={"Visage"}
           fontSize={"59px"}
@@ -655,7 +671,7 @@ const AboutPage = () => {
               />
             </Box>
             <Typography
-              fontFamily={"Light"}
+              fontFamily={"Comic Neue"}
               fontSize={size[0] < 800 ? "15px" : "38px"}
               fontWeight={800}
               marginTop={"10px"}
@@ -674,7 +690,7 @@ const AboutPage = () => {
               />
             </Box>
             <Typography
-              fontFamily={"Light"}
+              fontFamily={"Comic Neue"}
               fontSize={size[0] < 800 ? "15px" : "38px"}
               fontWeight={800}
               marginTop={"10px"}
@@ -693,7 +709,7 @@ const AboutPage = () => {
               />
             </Box>
             <Typography
-              fontFamily={"Light"}
+              fontFamily={"Comic Neue"}
               fontSize={size[0] < 800 ? "15px" : "38px"}
               fontWeight={800}
               marginTop={"10px"}
@@ -712,7 +728,7 @@ const AboutPage = () => {
               />
             </Box>
             <Typography
-              fontFamily={"Light"}
+              fontFamily={"Comic Neue"}
               fontSize={size[0] < 800 ? "15px" : "38px"}
               fontWeight={800}
               marginTop={"10px"}
@@ -724,7 +740,9 @@ const AboutPage = () => {
       </Box>
 
       <Box sx={{ position: "relative", bottom: "5px" }}>
-        © 2024 | kaijunka Project. All rights reserved.
+        <Typography fontFamily={"Comic Neue"}>
+          © 2024 | kaijunka Project. All rights reserved.
+        </Typography>
       </Box>
     </Box>
   );

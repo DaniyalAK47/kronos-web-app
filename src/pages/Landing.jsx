@@ -176,8 +176,19 @@ const LandingPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"}>
+                          <Typography fontFamily={"Comic Neue"}>
                             Our Mission
+                          </Typography>
+                        </Box>
+                      </MenuItem>
+                      <MenuItem>
+                        <Box
+                          display={"flex"}
+                          alignItems={"center"}
+                          onClick={() => navigate("/team")}
+                        >
+                          <Typography fontFamily={"Comic Neue"}>
+                            Team
                           </Typography>
                         </Box>
                       </MenuItem>
@@ -187,7 +198,9 @@ const LandingPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"}>Team</Typography>
+                          <Typography fontFamily={"Comic Neue"}>
+                            Episodes
+                          </Typography>
                         </Box>
                       </MenuItem>
                       <MenuItem>
@@ -196,16 +209,7 @@ const LandingPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Light"}>Episodes</Typography>
-                        </Box>
-                      </MenuItem>
-                      <MenuItem>
-                        <Box
-                          display={"flex"}
-                          alignItems={"center"}
-                          onClick={() => navigate("/more")}
-                        >
-                          <Typography fontFamily={"Light"}>
+                          <Typography fontFamily={"Comic Neue"}>
                             <Tooltip title="Coming Soon">News</Tooltip>
                           </Typography>
                         </Box>
@@ -242,7 +246,7 @@ const LandingPage = () => {
                                 marginRight: "10px",
                               }}
                             />
-                            <Typography fontFamily={"Light"}>
+                            <Typography fontFamily={"Comic Neue"}>
                               Twitter
                             </Typography>
                           </Box>
@@ -267,7 +271,7 @@ const LandingPage = () => {
                                 marginRight: "10px",
                               }}
                             />
-                            <Typography fontFamily={"Light"}>
+                            <Typography fontFamily={"Comic Neue"}>
                               Instagram
                             </Typography>
                           </Box>
@@ -290,7 +294,9 @@ const LandingPage = () => {
                                 marginRight: "10px",
                               }}
                             />
-                            <Typography fontFamily={"Light"}>Reddit</Typography>
+                            <Typography fontFamily={"Comic Neue"}>
+                              Reddit
+                            </Typography>
                           </Box>
                         </Link>
                       </MenuItem>
@@ -316,7 +322,9 @@ const LandingPage = () => {
                                 marginRight: "10px",
                               }}
                             />
-                            <Typography fontFamily={"Light"}>Tiktok</Typography>
+                            <Typography fontFamily={"Comic Neue"}>
+                              Tiktok
+                            </Typography>
                           </Box>
                         </Link>
                       </MenuItem>
@@ -334,7 +342,7 @@ const LandingPage = () => {
             {size?.[0] > 800 && (
               <Box display={"flex"} columnGap={10}>
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -346,7 +354,7 @@ const LandingPage = () => {
                 </Typography>
 
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -358,7 +366,7 @@ const LandingPage = () => {
                 </Typography>
 
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -384,7 +392,18 @@ const LandingPage = () => {
                       alignItems={"center"}
                       onClick={() => navigate("/more")}
                     >
-                      <Typography fontFamily={"Light"}>Our Mission</Typography>
+                      <Typography fontFamily={"Comic Neue"}>
+                        Our Mission
+                      </Typography>
+                    </Box>
+                  </MenuItem>
+                  <MenuItem>
+                    <Box
+                      display={"flex"}
+                      alignItems={"center"}
+                      onClick={() => navigate("/team")}
+                    >
+                      <Typography fontFamily={"Comic Neue"}>Team</Typography>
                     </Box>
                   </MenuItem>
                   <MenuItem>
@@ -393,7 +412,9 @@ const LandingPage = () => {
                       alignItems={"center"}
                       onClick={() => navigate("/more")}
                     >
-                      <Typography fontFamily={"Light"}>Team</Typography>
+                      <Typography fontFamily={"Comic Neue"}>
+                        Episodes
+                      </Typography>
                     </Box>
                   </MenuItem>
                   <MenuItem>
@@ -402,16 +423,7 @@ const LandingPage = () => {
                       alignItems={"center"}
                       onClick={() => navigate("/more")}
                     >
-                      <Typography fontFamily={"Light"}>Episodes</Typography>
-                    </Box>
-                  </MenuItem>
-                  <MenuItem>
-                    <Box
-                      display={"flex"}
-                      alignItems={"center"}
-                      onClick={() => navigate("/more")}
-                    >
-                      <Typography fontFamily={"Light"}>
+                      <Typography fontFamily={"Comic Neue"}>
                         <Tooltip title="Coming Soon">News</Tooltip>
                       </Typography>
                     </Box>
@@ -419,7 +431,7 @@ const LandingPage = () => {
                 </Menu>
 
                 {/* <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -430,7 +442,7 @@ const LandingPage = () => {
                 </Typography> */}
 
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -441,7 +453,7 @@ const LandingPage = () => {
                 </Typography>
 
                 <Typography
-                  fontFamily={"Light"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -475,7 +487,7 @@ const LandingPage = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography fontFamily={"Light"} variant="h6">
+                        <Typography fontFamily={"Comic Neue"} variant="h6">
                           Twitter
                         </Typography>
                       </Box>
@@ -497,7 +509,7 @@ const LandingPage = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography fontFamily={"Light"} variant="h6">
+                        <Typography fontFamily={"Comic Neue"} variant="h6">
                           Instagram
                         </Typography>
                       </Box>
@@ -517,7 +529,7 @@ const LandingPage = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography fontFamily={"Light"} variant="h6">
+                        <Typography fontFamily={"Comic Neue"} variant="h6">
                           Reddit
                         </Typography>
                       </Box>
@@ -542,7 +554,7 @@ const LandingPage = () => {
                           width={"20px"}
                           style={{ borderRadius: "50px", marginRight: "10px" }}
                         />
-                        <Typography fontFamily={"Light"} variant="h6">
+                        <Typography fontFamily={"Comic Neue"} variant="h6">
                           Tiktok
                         </Typography>
                       </Box>
@@ -562,7 +574,7 @@ const LandingPage = () => {
               onClick={() => (userAddress ? {} : connectwalletHandler())}
             >
               <Typography
-                fontFamily={"Light"}
+                fontFamily={"Comic Neue"}
                 color={"black"}
                 fontWeight={700}
                 maxWidth={userAddress ? "200px" : "120px"}
@@ -597,7 +609,9 @@ const LandingPage = () => {
       </Box>
 
       <Box sx={{ position: "relative", bottom: "5px" }}>
-        © 2024 | kaijunka Project. All rights reserved.
+        <Typography fontFamily={"Comic Neue"}>
+          © 2024 | kaijunka Project. All rights reserved.
+        </Typography>
       </Box>
     </Box>
   );

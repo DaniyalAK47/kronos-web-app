@@ -11,6 +11,7 @@ import LandingPage from "./pages/Landing";
 import AboutPage from "./pages/About";
 import OurMission from "./pages/OurMessage";
 import Story from "./pages/Story";
+import MyTeams from "./pages/MyTeams";
 
 function App() {
   // new MetaMaskSDK({
@@ -25,6 +26,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/more" element={<OurMission />} />
         <Route path="/story" element={<Story />} />
+        <Route path="/team" element={<MyTeams />} />
       </>
     )
   );

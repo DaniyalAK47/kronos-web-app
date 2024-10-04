@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: "Light" !important;
+  font-family: "Comic Neue" !important;
 }
 
 .App-logo {
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-  font-family: "Light";   /*Can be any text*/
-  src: local("Herecomesthecloud_1"),
-    url("./font/Herecomesthecloud_1.otf.ttf") format("truetype");
+  font-family: "Comic Neue";   /*Can be any text*/
+  src: local("ComicNeue-Regular"),
+    url("./font/ComicNeue-Regular.ttf") format("truetype");
 }
