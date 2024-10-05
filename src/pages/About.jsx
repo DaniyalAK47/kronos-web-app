@@ -164,14 +164,14 @@ const AboutPage = () => {
                     >
                       About
                     </MenuItem>
-                    <MenuItem
+                    {/* <MenuItem
                       onClick={() => {
                         setAnchorEl(null);
                         // navigate("/about");
                       }}
                     >
                       Characters
-                    </MenuItem>
+                    </MenuItem> */}
                     <MenuItem onClick={handleClickChar}>More</MenuItem>
                     <Menu
                       id="basic-menu"

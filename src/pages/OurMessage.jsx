@@ -662,6 +662,7 @@ const OurMission = () => {
         width={"100%"}
         justifyContent={"center"}
         sx={{ background: "#fef6db" }}
+        mb={9}
       >
         <Box
           width={{ xs: "100%", xl: "70%" }}
@@ -674,8 +675,9 @@ const OurMission = () => {
           <Box>
             <img
               src={HomeImg}
-              height={"660px"}
-              width={size[0] < 500 ? "100%" : "780px"}
+              // height={"660px"}
+              width={size[0] < 700 ? "100%" : "780px"}
+              height={size[0] < 700 ? "100%" : "660px"}
             />
           </Box>
 
@@ -722,11 +724,11 @@ const OurMission = () => {
                 societal challenges. Through storytelling, art, and technology,
                 Kaijunka envisions a future where every individual is empowered
                 to challenge the status quo, cultivate meaningful connections,
-                and contribute to a more just and enlightened society. This
-                vision statement reflects the balance between Kaijunka's ancient
-                roots and its modern-day relevance, emphasizing the
-                community-driven aspect of the project while inspiring
-                participants to engage with deeper moral and societal themes.
+                and contribute to a more just and enlightened society.
+                {/* This vision statement reflects the balance between Kaijunka's ancient */}
+                {/* roots and its modern-day relevance, emphasizing the */}
+                {/* community-driven aspect of the project while inspiring */}
+                {/* participants to engage with deeper moral and societal themes. */}
               </Typography>
             </Box>
           </Box>
@@ -1048,7 +1050,7 @@ const OurMission = () => {
         </Box>
       </Box> */}
 
-      <Box sx={{ position: "absolute", bottom: "5px", left: "40%" }}>
+      <Box>
         <Typography fontFamily={"Comic Neue"}>
           © 2024 | kaijunka Project. All rights reserved.
         </Typography>
