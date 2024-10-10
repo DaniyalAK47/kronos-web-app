@@ -227,6 +227,20 @@ const AboutPage = () => {
                           </Typography>
                         </Box>
                       </MenuItem>
+                      <MenuItem>
+                        <Box
+                          display={"flex"}
+                          alignItems={"center"}
+                          onClick={() => navigate("/ip")}
+                        >
+                          <Typography
+                            fontFamily={"Comic Neue"}
+                            fontFamily={"Comic Neue"}
+                          >
+                            <Tooltip>IP</Tooltip>
+                          </Typography>
+                        </Box>
+                      </MenuItem>
                     </Menu>
                     <MenuItem>
                       <Tooltip title="Coming Soon">Lore</Tooltip>
@@ -416,6 +430,20 @@ const AboutPage = () => {
                     >
                       <Typography fontFamily={"Comic Neue"}>
                         <Tooltip title="Coming Soon">News</Tooltip>
+                      </Typography>
+                    </Box>
+                  </MenuItem>
+                  <MenuItem>
+                    <Box
+                      display={"flex"}
+                      alignItems={"center"}
+                      onClick={() => navigate("/ip")}
+                    >
+                      <Typography
+                        fontFamily={"Comic Neue"}
+                        fontFamily={"Comic Neue"}
+                      >
+                        <Tooltip>IP</Tooltip>
                       </Typography>
                     </Box>
                   </MenuItem>

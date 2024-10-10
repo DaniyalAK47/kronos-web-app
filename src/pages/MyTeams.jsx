@@ -179,7 +179,10 @@ const MyTeams = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Comic Neue"} fontFamily={"Comic Neue"}>
+                          <Typography
+                            fontFamily={"Comic Neue"}
+                            fontFamily={"Comic Neue"}
+                          >
                             Our Mission
                           </Typography>
                         </Box>
@@ -190,7 +193,10 @@ const MyTeams = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/teams")}
                         >
-                          <Typography fontFamily={"Comic Neue"} fontFamily={"Comic Neue"}>
+                          <Typography
+                            fontFamily={"Comic Neue"}
+                            fontFamily={"Comic Neue"}
+                          >
                             Team
                           </Typography>
                         </Box>
@@ -201,7 +207,10 @@ const MyTeams = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Comic Neue"} fontFamily={"Comic Neue"}>
+                          <Typography
+                            fontFamily={"Comic Neue"}
+                            fontFamily={"Comic Neue"}
+                          >
                             Episodes
                           </Typography>
                         </Box>
@@ -212,8 +221,25 @@ const MyTeams = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Comic Neue"} fontFamily={"Comic Neue"}>
+                          <Typography
+                            fontFamily={"Comic Neue"}
+                            fontFamily={"Comic Neue"}
+                          >
                             <Tooltip title="Coming Soon">News</Tooltip>
+                          </Typography>
+                        </Box>
+                      </MenuItem>
+                      <MenuItem>
+                        <Box
+                          display={"flex"}
+                          alignItems={"center"}
+                          onClick={() => navigate("/ip")}
+                        >
+                          <Typography
+                            fontFamily={"Comic Neue"}
+                            fontFamily={"Comic Neue"}
+                          >
+                            <Tooltip>IP</Tooltip>
                           </Typography>
                         </Box>
                       </MenuItem>
@@ -416,7 +442,10 @@ const MyTeams = () => {
                       alignItems={"center"}
                       onClick={() => navigate("/more")}
                     >
-                      <Typography fontFamily={"Comic Neue"} fontFamily={"Comic Neue"}>
+                      <Typography
+                        fontFamily={"Comic Neue"}
+                        fontFamily={"Comic Neue"}
+                      >
                         Our Mission
                       </Typography>
                     </Box>
@@ -436,7 +465,10 @@ const MyTeams = () => {
                       alignItems={"center"}
                       onClick={() => navigate("/team")}
                     >
-                      <Typography fontFamily={"Comic Neue"} fontFamily={"Comic Neue"}>
+                      <Typography
+                        fontFamily={"Comic Neue"}
+                        fontFamily={"Comic Neue"}
+                      >
                         Team
                       </Typography>
                     </Box>
@@ -450,7 +482,9 @@ const MyTeams = () => {
                         style={{ textDecoration: "none", color: "black" }}
                       > */}
                     <Box display={"flex"} alignItems={"center"}>
-                      <Typography fontFamily={"Comic Neue"}>Episodes</Typography>
+                      <Typography fontFamily={"Comic Neue"}>
+                        Episodes
+                      </Typography>
                     </Box>
                     {/* </Link> */}
                   </MenuItem>
@@ -462,11 +496,28 @@ const MyTeams = () => {
                         style={{ textDecoration: "none", color: "black" }}
                       > */}
                     <Box display={"flex"} alignItems={"center"}>
-                      <Typography fontFamily={"Comic Neue"} fontFamily={"Comic Neue"}>
+                      <Typography
+                        fontFamily={"Comic Neue"}
+                        fontFamily={"Comic Neue"}
+                      >
                         <Tooltip title="Coming Soon">News</Tooltip>
                       </Typography>
                     </Box>
                     {/* </Link> */}
+                  </MenuItem>
+                  <MenuItem>
+                    <Box
+                      display={"flex"}
+                      alignItems={"center"}
+                      onClick={() => navigate("/ip")}
+                    >
+                      <Typography
+                        fontFamily={"Comic Neue"}
+                        fontFamily={"Comic Neue"}
+                      >
+                        <Tooltip>IP</Tooltip>
+                      </Typography>
+                    </Box>
                   </MenuItem>
                 </Menu>
 
@@ -655,7 +706,11 @@ const MyTeams = () => {
           >
             Team
           </Typography>
-          <Typography fontFamily={"Comic Neue"} fontWeight={700} fontSize={"18px"}>
+          <Typography
+            fontFamily={"Comic Neue"}
+            fontWeight={700}
+            fontSize={"18px"}
+          >
             Vinod Vijay
           </Typography>
           <Typography fontFamily={"Comic Neue"} mb={{ xs: 2, lg: 18 }}>
@@ -965,8 +1020,10 @@ const MyTeams = () => {
         </Box>
       </Box>
 
-      <Box sx={{ position: "relative", bottom: "5px",mt:10 }}>
-        <Typography fontFamily={"Comic Neue"}>© 2024 | kaijunka Project. All rights reserved.</Typography>
+      <Box sx={{ position: "relative", bottom: "5px", mt: 10 }}>
+        <Typography fontFamily={"Comic Neue"}>
+          © 2024 | kaijunka Project. All rights reserved.
+        </Typography>
       </Box>
     </Box>
   );

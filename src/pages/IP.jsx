@@ -9,7 +9,7 @@ import {
   Tooltip,
   Typography,
 } from "@mui/material";
-import Lottie from "react-lottie";
+import HomeImg from "../assets/home.png";
 
 import animationData from "../lotties/godzillaLatestJsonLottie .json";
 import nameLogo from "../assets/Kaijunka.png";
@@ -27,8 +27,11 @@ import InstagramIcon from "../assets/Instagram_icon.png.webp";
 import RedditIcon from "../assets/reddit.png";
 
 import TiktokLogo from "../assets/tiktok.png";
+import ceoImage from "../assets/ceoimg.jpg";
 
-const LandingPage = () => {
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+
+const IP = () => {
   const { sdk } = useSDK();
   const [size, setSize] = useState([0, 0]);
   const [userAddress, setUserAddress] = useState(
@@ -176,7 +179,10 @@ const LandingPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Comic Neue"}>
+                          <Typography
+                            fontFamily={"Comic Neue"}
+                            fontFamily={"Comic Neue"}
+                          >
                             Our Mission
                           </Typography>
                         </Box>
@@ -185,9 +191,12 @@ const LandingPage = () => {
                         <Box
                           display={"flex"}
                           alignItems={"center"}
-                          onClick={() => navigate("/team")}
+                          onClick={() => navigate("/teams")}
                         >
-                          <Typography fontFamily={"Comic Neue"}>
+                          <Typography
+                            fontFamily={"Comic Neue"}
+                            fontFamily={"Comic Neue"}
+                          >
                             Team
                           </Typography>
                         </Box>
@@ -198,7 +207,10 @@ const LandingPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Comic Neue"}>
+                          <Typography
+                            fontFamily={"Comic Neue"}
+                            fontFamily={"Comic Neue"}
+                          >
                             Episodes
                           </Typography>
                         </Box>
@@ -209,7 +221,10 @@ const LandingPage = () => {
                           alignItems={"center"}
                           onClick={() => navigate("/more")}
                         >
-                          <Typography fontFamily={"Comic Neue"}>
+                          <Typography
+                            fontFamily={"Comic Neue"}
+                            fontFamily={"Comic Neue"}
+                          >
                             <Tooltip title="Coming Soon">News</Tooltip>
                           </Typography>
                         </Box>
@@ -260,7 +275,10 @@ const LandingPage = () => {
                                 marginRight: "10px",
                               }}
                             />
-                            <Typography fontFamily={"Comic Neue"}>
+                            <Typography
+                              fontFamily={"Comic Neue"}
+                              fontFamily={"Comic Neue"}
+                            >
                               Twitter
                             </Typography>
                           </Box>
@@ -285,7 +303,10 @@ const LandingPage = () => {
                                 marginRight: "10px",
                               }}
                             />
-                            <Typography fontFamily={"Comic Neue"}>
+                            <Typography
+                              fontFamily={"Comic Neue"}
+                              fontFamily={"Comic Neue"}
+                            >
                               Instagram
                             </Typography>
                           </Box>
@@ -308,7 +329,10 @@ const LandingPage = () => {
                                 marginRight: "10px",
                               }}
                             />
-                            <Typography fontFamily={"Comic Neue"}>
+                            <Typography
+                              fontFamily={"Comic Neue"}
+                              fontFamily={"Comic Neue"}
+                            >
                               Reddit
                             </Typography>
                           </Box>
@@ -336,7 +360,10 @@ const LandingPage = () => {
                                 marginRight: "10px",
                               }}
                             />
-                            <Typography fontFamily={"Comic Neue"}>
+                            <Typography
+                              fontFamily={"Comic Neue"}
+                              fontFamily={"Comic Neue"}
+                            >
                               Tiktok
                             </Typography>
                           </Box>
@@ -357,6 +384,7 @@ const LandingPage = () => {
               <Box display={"flex"} columnGap={10}>
                 <Typography
                   fontFamily={"Comic Neue"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -369,6 +397,7 @@ const LandingPage = () => {
 
                 <Typography
                   fontFamily={"Comic Neue"}
+                  fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
                   component="div"
@@ -380,6 +409,7 @@ const LandingPage = () => {
                 </Typography>
 
                 <Typography
+                  fontFamily={"Comic Neue"}
                   fontFamily={"Comic Neue"}
                   variant="h6"
                   fontWeight={800}
@@ -401,46 +431,79 @@ const LandingPage = () => {
                   sx={{ borderRadius: "5px" }}
                 >
                   <MenuItem>
+                    {/* <Link
+                        to={"https://x.com/kaijunka"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "black" }}
+                      > */}
                     <Box
                       display={"flex"}
                       alignItems={"center"}
                       onClick={() => navigate("/more")}
                     >
-                      <Typography fontFamily={"Comic Neue"}>
+                      <Typography
+                        fontFamily={"Comic Neue"}
+                        fontFamily={"Comic Neue"}
+                      >
                         Our Mission
                       </Typography>
                     </Box>
+                    {/* </Link> */}
                   </MenuItem>
                   <MenuItem>
+                    {/* <Link
+                        to={
+                          "https://www.instagram.com/kaijunka_hq?igsh=YWNwM2huYnhzZnQ3&utm_source=qr"
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "black" }}
+                      > */}
                     <Box
                       display={"flex"}
                       alignItems={"center"}
                       onClick={() => navigate("/team")}
                     >
-                      <Typography fontFamily={"Comic Neue"}>Team</Typography>
+                      <Typography
+                        fontFamily={"Comic Neue"}
+                        fontFamily={"Comic Neue"}
+                      >
+                        Team
+                      </Typography>
                     </Box>
+                    {/* </Link> */}
                   </MenuItem>
                   <MenuItem>
-                    <Box
-                      display={"flex"}
-                      alignItems={"center"}
-                      onClick={() => navigate("/more")}
-                    >
+                    {/* <Link
+                        to={"https://www.reddit.com/r/Kaijunka/s/uHOsiD8GmK"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "black" }}
+                      > */}
+                    <Box display={"flex"} alignItems={"center"}>
                       <Typography fontFamily={"Comic Neue"}>
                         Episodes
                       </Typography>
                     </Box>
+                    {/* </Link> */}
                   </MenuItem>
                   <MenuItem>
-                    <Box
-                      display={"flex"}
-                      alignItems={"center"}
-                      onClick={() => navigate("/more")}
-                    >
-                      <Typography fontFamily={"Comic Neue"}>
+                    {/* <Link
+                        to={"http://www.tiktok.com/@kaijunka_hq"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "black" }}
+                      > */}
+                    <Box display={"flex"} alignItems={"center"}>
+                      <Typography
+                        fontFamily={"Comic Neue"}
+                        fontFamily={"Comic Neue"}
+                      >
                         <Tooltip title="Coming Soon">News</Tooltip>
                       </Typography>
                     </Box>
+                    {/* </Link> */}
                   </MenuItem>
                   <MenuItem>
                     <Box
@@ -458,16 +521,16 @@ const LandingPage = () => {
                   </MenuItem>
                 </Menu>
 
-                {/* <Typography
-                  fontFamily={"Comic Neue"}
-                  variant="h6"
-                  fontWeight={800}
-                  component="div"
-                  sx={{ flexGrow: 1, cursor: "pointer" }}
-                  textTransform={"uppercase"}
-                >
-                  <Tooltip title="Coming Soon">More</Tooltip>
-                </Typography> */}
+                {/* <Typography fontFamily={"Comic Neue"}
+                    fontFamily={"Comic Neue"}
+                    variant="h6"
+                    fontWeight={800}
+                    component="div"
+                    sx={{ flexGrow: 1, cursor: "pointer" }}
+                    textTransform={"uppercase"}
+                  >
+                    <Tooltip title="Coming Soon">More</Tooltip>
+                  </Typography> */}
 
                 <Typography
                   fontFamily={"Comic Neue"}
@@ -603,6 +666,7 @@ const LandingPage = () => {
             >
               <Typography
                 fontFamily={"Comic Neue"}
+                fontFamily={"Comic Neue"}
                 color={"black"}
                 fontWeight={700}
                 maxWidth={userAddress ? "200px" : "120px"}
@@ -622,21 +686,52 @@ const LandingPage = () => {
 
       <Box
         display={"flex"}
-        flexDirection={"column"}
-        // width={"99vw"}
-        height={"87vh"}
-        width={"99.8%"}
-        // height={"90%"}
-        //   alignItems={"center"}
         justifyContent={"center"}
-        // sx={{ background: "#ff9935" }}
+        alignItems={"center"}
+        flexDirection={"column"}
+        pt={5}
+        sx={{ background: "#fef6db" }}
+        height={"100%"}
+        minHeight={"75vh"}
+        px={2}
       >
-        <Box>
-          <Lottie options={defaultOptions} />
+        <Box width={{ xs: "100%", xl: "70%" }}>
+          <Typography
+            fontFamily={"Comic Neue"}
+            fontSize={"30px"}
+            fontWeight={700}
+            mb={2}
+          >
+            IP Rights: A Sneak Peek into Kaijunka's Future
+          </Typography>
+          <Typography fontFamily={"Comic Neue"} fontSize={"18px"} mb={2}>
+            At Kaijunka, we are not just creating a brand, we are building a
+            world. A world where creativity, storytelling, and characters come
+            to life in ways that inspire and spark joy. Protecting the integrity
+            of this world is our top priority, and that's why intellectual
+            property (IP) rights are at the heart of what we do.
+          </Typography>
+          <Typography fontFamily={"Comic Neue"} fontSize={"18px"} mb={2}>
+            We are working diligently behind the scenes to secure trademarks and
+            designs for our characters, ensuring that Kaijunka stays true to its
+            vision and remains a unique, vibrant universe. Our upcoming
+            trademarks and IP protections will not only safeguard Kaijunka's
+            unique art and narrative but will also lay the foundation for
+            exciting partnerships and product launches.
+          </Typography>
+          <Typography fontFamily={"Comic Neue"} fontSize={"18px"} mb={2}>
+            Stay tuned as we embark on this journey to protect the future of
+            Kaijunka, giving our community confidence that everything we build
+            will remain authentic, original, and protected. This is just the
+            beginning.
+          </Typography>
+          <Typography fontFamily={"Comic Neue"} fontSize={"18px"} mb={2}>
+            For more details, please send a mail to vinod@nyewresearch.com
+          </Typography>
         </Box>
       </Box>
 
-      <Box sx={{ position: "relative", bottom: "5px" }}>
+      <Box sx={{ position: "relative", bottom: "5px", mt: 10 }}>
         <Typography fontFamily={"Comic Neue"}>
           © 2024 | kaijunka Project. All rights reserved.
         </Typography>
@@ -645,4 +740,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default IP;

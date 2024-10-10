@@ -229,6 +229,20 @@ const OurMission = () => {
                           </Typography>
                         </Box>
                       </MenuItem>
+                      <MenuItem>
+                        <Box
+                          display={"flex"}
+                          alignItems={"center"}
+                          onClick={() => navigate("/ip")}
+                        >
+                          <Typography
+                            fontFamily={"Comic Neue"}
+                            fontFamily={"Comic Neue"}
+                          >
+                            <Tooltip>IP</Tooltip>
+                          </Typography>
+                        </Box>
+                      </MenuItem>
                     </Menu>
                     <MenuItem>
                       <Tooltip title="Coming Soon">Lore</Tooltip>
@@ -490,6 +504,20 @@ const OurMission = () => {
                       </Typography>
                     </Box>
                     {/* </Link> */}
+                  </MenuItem>
+                  <MenuItem>
+                    <Box
+                      display={"flex"}
+                      alignItems={"center"}
+                      onClick={() => navigate("/ip")}
+                    >
+                      <Typography
+                        fontFamily={"Comic Neue"}
+                        fontFamily={"Comic Neue"}
+                      >
+                        <Tooltip>IP</Tooltip>
+                      </Typography>
+                    </Box>
                   </MenuItem>
                 </Menu>
 

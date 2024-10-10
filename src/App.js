@@ -12,6 +12,7 @@ import AboutPage from "./pages/About";
 import OurMission from "./pages/OurMessage";
 import Story from "./pages/Story";
 import MyTeams from "./pages/MyTeams";
+import IP from "./pages/IP";
 
 function App() {
   // new MetaMaskSDK({
@@ -27,6 +28,7 @@ function App() {
         <Route path="/more" element={<OurMission />} />
         <Route path="/story" element={<Story />} />
         <Route path="/team" element={<MyTeams />} />
+        <Route path="/ip" element={<IP />} />
       </>
     )
   );
