@@ -31,6 +31,15 @@ import ceoImage from "../assets/ceoimg.jpg";
 
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
+import Sahana from "../assets/Sahana.png";
+import Brenda from "../assets/Brenda.png";
+import Mueed from "../assets/Mueed.png";
+import Anupa from "../assets/Anupa.png";
+import Pooventhan from "../assets/Pooventhan.png";
+import Niranjan from "../assets/Niranjan.png";
+import Shivani from "../assets/Shivani.png";
+import Savitha from "../assets/Savitha.png";
+
 const MyTeams = () => {
   const { sdk } = useSDK();
   const [size, setSize] = useState([0, 0]);
@@ -702,20 +711,28 @@ const MyTeams = () => {
             fontFamily={"Comic Neue"}
             fontWeight={700}
             fontSize={"28px"}
-            mb={{ xs: 2, lg: 18 }}
+            mb={{ xs: 2, lg: 8 }}
           >
             Team
           </Typography>
-          <Typography
-            fontFamily={"Comic Neue"}
-            fontWeight={700}
-            fontSize={"18px"}
-          >
-            Vinod Vijay
-          </Typography>
-          <Typography fontFamily={"Comic Neue"} mb={{ xs: 2, lg: 18 }}>
-            (CEO - Nyew Research)
-          </Typography>
+          <Box>
+            <img
+              src={Mueed}
+              height={"150px"}
+              width={"150px"}
+              style={{ borderRadius: "10px" }}
+            />
+            <Typography
+              fontFamily={"Comic Neue"}
+              fontWeight={700}
+              fontSize={"18px"}
+            >
+              Vinod Vijay
+            </Typography>
+            <Typography fontFamily={"Comic Neue"} mb={{ xs: 2, lg: 18 }}>
+              (CEO - Nyew Research)
+            </Typography>
+          </Box>
           <Box
             display={"flex"}
             flexDirection={"column"}
@@ -738,7 +755,7 @@ const MyTeams = () => {
             <Box
               display={"flex"}
               flexDirection={{ xs: "column", md: "row" }}
-              alignItems={{ xs: "center", lg: "start" }}
+              alignItems={{ xs: "center", md: "start" }}
               mr={{ lg: 10 }}
             >
               {/* <Typography
@@ -755,14 +772,21 @@ const MyTeams = () => {
                 flexDirection={"column"}
                 justifyContent={"center"}
                 alignItems={"center"}
+                mr={{ md: 4 }}
               >
-                <AccountCircleIcon
+                {/* <AccountCircleIcon
                   sx={{
                     // transform: "scale(7)",
                     // height: "140px",
                     // marginLeft: "10px",
                     fontSize: "150px",
                   }}
+                /> */}
+                <img
+                  src={Sahana}
+                  height={"150px"}
+                  width={"150px"}
+                  style={{ borderRadius: "10px" }}
                 />
                 <Typography
                   fontFamily={"Comic Neue"}
@@ -771,7 +795,7 @@ const MyTeams = () => {
                 >
                   Sahana
                 </Typography>
-                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"150px"}>
                   Creative director
                 </Typography>
               </Box>
@@ -781,15 +805,23 @@ const MyTeams = () => {
                 flexDirection={"column"}
                 justifyContent={"center"}
                 alignItems={"center"}
+                mr={{ md: 4 }}
               >
-                <AccountCircleIcon
+                {/* <AccountCircleIcon
                   sx={{
                     // transform: "scale(7)",
                     // height: "140px",
                     // marginLeft: "10px",
                     fontSize: "150px",
                   }}
+                /> */}
+                <img
+                  src={Brenda}
+                  height={"150px"}
+                  width={"150px"}
+                  style={{ borderRadius: "10px" }}
                 />
+
                 <Typography
                   fontFamily={"Comic Neue"}
                   fontWeight={700}
@@ -797,24 +829,22 @@ const MyTeams = () => {
                 >
                   BrenFi
                 </Typography>
-                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"150px"}>
                   Art director
                 </Typography>
               </Box>
 
-              <Box
+              {/* <Box
                 display={"flex"}
                 flexDirection={"column"}
                 justifyContent={"center"}
                 alignItems={"center"}
               >
-                <AccountCircleIcon
-                  sx={{
-                    // transform: "scale(7)",
-                    // height: "140px",
-                    // marginLeft: "10px",
-                    fontSize: "150px",
-                  }}
+                <img
+                  src={Mueed}
+                  height={"150px"}
+                  width={"150px"}
+                  style={{ borderRadius: "10px" }}
                 />
                 <Typography
                   fontFamily={"Comic Neue"}
@@ -823,24 +853,23 @@ const MyTeams = () => {
                 >
                   LondRain
                 </Typography>
-                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"150px"}>
                   Illustrator
                 </Typography>
-              </Box>
+              </Box> */}
 
               <Box
                 display={"flex"}
                 flexDirection={"column"}
                 justifyContent={"center"}
                 alignItems={"center"}
+                mr={{ md: 4 }}
               >
-                <AccountCircleIcon
-                  sx={{
-                    // transform: "scale(7)",
-                    // height: "140px",
-                    // marginLeft: "10px",
-                    fontSize: "150px",
-                  }}
+                <img
+                  src={Mueed}
+                  height={"150px"}
+                  width={"150px"}
+                  style={{ borderRadius: "10px" }}
                 />
                 <Typography
                   fontFamily={"Comic Neue"}
@@ -849,7 +878,7 @@ const MyTeams = () => {
                 >
                   Mueed
                 </Typography>
-                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"150px"}>
                   Blockchain Engineering Lead
                 </Typography>
               </Box>
@@ -859,14 +888,13 @@ const MyTeams = () => {
                 flexDirection={"column"}
                 justifyContent={"center"}
                 alignItems={"center"}
+                mr={{ md: 4 }}
               >
-                <AccountCircleIcon
-                  sx={{
-                    // transform: "scale(7)",
-                    // height: "140px",
-                    // marginLeft: "10px",
-                    fontSize: "150px",
-                  }}
+                <img
+                  src={Anupa}
+                  height={"150px"}
+                  width={"150px"}
+                  style={{ borderRadius: "10px" }}
                 />
                 <Typography
                   fontFamily={"Comic Neue"}
@@ -875,7 +903,7 @@ const MyTeams = () => {
                 >
                   Anupa
                 </Typography>
-                <Typography fontFamily={"Comic Neue"} mb={9} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={9} width={"150px"}>
                   Dev Ops Engineer
                 </Typography>
               </Box>
@@ -896,21 +924,20 @@ const MyTeams = () => {
               display={"flex"}
               // flexDirection={"row"}
               flexDirection={{ xs: "column", md: "row" }}
-              alignItems={{ xs: "center", lg: "start" }}
+              alignItems={{ xs: "center", md: "start" }}
             >
               <Box
                 display={"flex"}
                 flexDirection={"column"}
                 justifyContent={"center"}
                 alignItems={"center"}
+                mr={{ md: 4 }}
               >
-                <AccountCircleIcon
-                  sx={{
-                    // transform: "scale(7)",
-                    fontSize: "150px",
-                    // height: "140px",
-                    // marginLeft: "10px",
-                  }}
+                <img
+                  src={Savitha}
+                  height={"150px"}
+                  width={"150px"}
+                  style={{ borderRadius: "10px" }}
                 />
                 <Typography
                   fontFamily={"Comic Neue"}
@@ -919,7 +946,7 @@ const MyTeams = () => {
                 >
                   Savitha
                 </Typography>
-                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"150px"}>
                   ex-Meta
                 </Typography>
               </Box>
@@ -929,14 +956,13 @@ const MyTeams = () => {
                 flexDirection={"column"}
                 justifyContent={"center"}
                 alignItems={"center"}
+                mr={{ md: 4 }}
               >
-                <AccountCircleIcon
-                  sx={{
-                    // transform: "scale(7)",
-                    // height: "140px",
-                    // marginLeft: "10px",
-                    fontSize: "150px",
-                  }}
+                <img
+                  src={Shivani}
+                  height={"150px"}
+                  width={"150px"}
+                  style={{ borderRadius: "10px" }}
                 />
                 <Typography
                   fontFamily={"Comic Neue"}
@@ -945,7 +971,7 @@ const MyTeams = () => {
                 >
                   Shivani
                 </Typography>
-                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"150px"}>
                   ex-Dell
                 </Typography>
               </Box>
@@ -955,14 +981,13 @@ const MyTeams = () => {
                 flexDirection={"column"}
                 justifyContent={"center"}
                 alignItems={"center"}
+                mr={{ md: 4 }}
               >
-                <AccountCircleIcon
-                  sx={{
-                    // transform: "scale(7)",
-                    // height: "140px",
-                    // marginLeft: "10px",
-                    fontSize: "150px",
-                  }}
+                <img
+                  src={Niranjan}
+                  height={"150px"}
+                  width={"150px"}
+                  style={{ borderRadius: "10px" }}
                 />
                 <Typography
                   fontFamily={"Comic Neue"}
@@ -971,7 +996,7 @@ const MyTeams = () => {
                 >
                   Niranjan
                 </Typography>
-                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"150px"}>
                   Schneider
                 </Typography>
               </Box>
@@ -981,14 +1006,13 @@ const MyTeams = () => {
                 flexDirection={"column"}
                 justifyContent={"center"}
                 alignItems={"center"}
+                mr={{ md: 4 }}
               >
-                <AccountCircleIcon
-                  sx={{
-                    // transform: "scale(7)",
-                    // height: "140px",
-                    // marginLeft: "10px",
-                    fontSize: "150px",
-                  }}
+                <img
+                  src={Pooventhan}
+                  height={"150px"}
+                  width={"150px"}
+                  style={{ borderRadius: "10px" }}
                 />
                 <Typography
                   fontFamily={"Comic Neue"}
@@ -997,7 +1021,7 @@ const MyTeams = () => {
                 >
                   Pooventhan
                 </Typography>
-                <Typography fontFamily={"Comic Neue"} mb={1} width={"200px"}>
+                <Typography fontFamily={"Comic Neue"} mb={1} width={"150px"}>
                   Witron
                 </Typography>
               </Box>
