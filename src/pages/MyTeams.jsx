@@ -39,6 +39,7 @@ import Pooventhan from "../assets/Pooventhan.png";
 import Niranjan from "../assets/Niranjan.png";
 import Shivani from "../assets/Shivani.png";
 import Savitha from "../assets/Savitha.png";
+import Vinod from "../assets/Vinod.png";
 
 const MyTeams = () => {
   const { sdk } = useSDK();
@@ -717,7 +718,7 @@ const MyTeams = () => {
           </Typography>
           <Box>
             <img
-              src={Mueed}
+              src={Vinod}
               height={"150px"}
               width={"150px"}
               style={{ borderRadius: "10px" }}
